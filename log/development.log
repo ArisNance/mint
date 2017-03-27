@@ -1,0 +1,7 @@
+
+
+Started GET "/" for 162.236.28.197 at 2017-03-27 14:37:39 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 773ms (Views: 762.4ms | ActiveRecord: 0.0ms)
