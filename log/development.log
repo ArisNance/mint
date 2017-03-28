@@ -722,3 +722,629 @@ Processing by HomeController#index as HTML
   Rendered home/index.html.erb within layouts/application (0.3ms)
   Rendered home/_header.html.erb (0.8ms)
 Completed 200 OK in 43ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 162.236.28.197 at 2017-03-27 21:12:39 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.8ms)
+  Rendered home/_header.html.erb (0.3ms)
+Completed 200 OK in 63ms (Views: 61.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 162.236.28.197 at 2017-03-27 21:13:54 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (11.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (18.7ms)
+  Rendered home/_header.html.erb (0.4ms)
+Completed 200 OK in 174ms (Views: 172.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 162.236.28.197 at 2017-03-27 21:17:58 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.5ms)
+  Rendered home/_header.html.erb (0.3ms)
+Completed 200 OK in 62ms (Views: 60.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 162.236.28.197 at 2017-03-27 21:18:46 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.5ms)
+  Rendered home/_header.html.erb (0.3ms)
+Completed 200 OK in 56ms (Views: 55.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 162.236.28.197 at 2017-03-27 21:18:49 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.0ms)
+  Rendered home/_header.html.erb (0.5ms)
+Completed 200 OK in 108ms (Views: 106.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 162.236.28.197 at 2017-03-27 21:21:34 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.7ms)
+  Rendered home/_header.html.erb (0.4ms)
+Completed 200 OK in 67ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 162.236.28.197 at 2017-03-27 21:23:13 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (17.0ms)
+  Rendered home/_header.html.erb (0.4ms)
+Completed 200 OK in 84ms (Views: 81.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 162.236.28.197 at 2017-03-27 21:26:52 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (10.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (21.5ms)
+  Rendered home/_header.html.erb (0.7ms)
+Completed 200 OK in 247ms (Views: 244.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 162.236.28.197 at 2017-03-27 21:26:54 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.2ms)
+  Rendered home/_header.html.erb (0.5ms)
+Completed 200 OK in 82ms (Views: 80.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 162.236.28.197 at 2017-03-27 21:27:01 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.9ms)
+  Rendered home/_header.html.erb (0.3ms)
+Completed 200 OK in 85ms (Views: 83.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 162.236.28.197 at 2017-03-27 21:28:38 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.9ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (15.1ms)
+  Rendered home/_header.html.erb (0.4ms)
+Completed 200 OK in 119ms (Views: 117.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 162.236.28.197 at 2017-03-27 21:28:57 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.6ms)
+  Rendered home/_header.html.erb (0.6ms)
+Completed 200 OK in 219ms (Views: 217.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 162.236.28.197 at 2017-03-27 21:30:57 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.1ms)
+  Rendered home/_header.html.erb (0.4ms)
+Completed 200 OK in 80ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 162.236.28.197 at 2017-03-27 21:31:00 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.8ms)
+  Rendered home/_header.html.erb (0.4ms)
+Completed 200 OK in 95ms (Views: 93.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 162.236.28.197 at 2017-03-27 21:31:02 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/shared/_links.html.erb (12.2ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (20.8ms)
+  Rendered home/_header.html.erb (0.4ms)
+Completed 200 OK in 138ms (Views: 136.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 162.236.28.197 at 2017-03-27 21:31:05 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.0ms)
+  Rendered home/_header.html.erb (0.4ms)
+Completed 200 OK in 173ms (Views: 171.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 162.236.28.197 at 2017-03-27 21:31:27 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.2ms)
+  Rendered home/_header.html.erb (0.3ms)
+Completed 200 OK in 72ms (Views: 71.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 162.236.28.197 at 2017-03-27 21:32:35 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XiRplMky52eFVoU80n4EY3mVZ/NkqxH7iu+uh7LaCu2xyTBKMhF9hfguvqDu0ubH3RRv0Nisv1DcWU9QOxtdIw==", "user"=>{"email"=>"monetharkin@live.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (3.9ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'monetharkin@live.com' LIMIT 1[0m
+  [1m[35mSQL (2.4ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "monetharkin@live.com"], ["encrypted_password", "$2a$11$tgroInD3Be/9sgfNQcQMNOrddo.i9qJHynYAvThMQZ2I7wvNZ3mAS"], ["created_at", "2017-03-27 21:32:36.121490"], ["updated_at", "2017-03-27 21:32:36.121490"]]
+  [1m[36m (13.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2017-03-27 21:32:36.140589"], ["current_sign_in_at", "2017-03-27 21:32:36.140589"], ["last_sign_in_ip", "162.236.28.197"], ["current_sign_in_ip", "162.236.28.197"], ["sign_in_count", 1], ["updated_at", "2017-03-27 21:32:36.141723"], ["id", 1]]
+  [1m[35m (14.3ms)[0m  commit transaction
+Redirected to https://pinterested-monetish.c9users.io/
+Completed 302 Found in 300ms (ActiveRecord: 34.7ms)
+
+
+Started GET "/" for 162.236.28.197 at 2017-03-27 21:32:36 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered home/_header.html.erb (0.6ms)
+Completed 200 OK in 86ms (Views: 84.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 162.236.28.197 at 2017-03-27 21:32:51 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to https://pinterested-monetish.c9users.io/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 188ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 162.236.28.197 at 2017-03-27 21:32:52 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+  Rendered home/_header.html.erb (0.4ms)
+Completed 200 OK in 56ms (Views: 55.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 162.236.28.197 at 2017-03-27 21:32:55 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to https://pinterested-monetish.c9users.io/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 162.236.28.197 at 2017-03-27 21:32:55 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered home/_header.html.erb (0.4ms)
+Completed 200 OK in 71ms (Views: 70.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 162.236.28.197 at 2017-03-27 21:33:01 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered home/_header.html.erb (0.6ms)
+Completed 200 OK in 120ms (Views: 119.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 162.236.28.197 at 2017-03-27 21:33:03 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to https://pinterested-monetish.c9users.io/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 162.236.28.197 at 2017-03-27 21:33:03 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  Rendered home/_header.html.erb (0.3ms)
+Completed 200 OK in 77ms (Views: 76.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 162.236.28.197 at 2017-03-27 21:33:05 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+  Rendered home/_header.html.erb (0.3ms)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 162.236.28.197 at 2017-03-27 21:35:54 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+  Rendered home/_header.html.erb (1.4ms)
+Completed 200 OK in 125ms (Views: 124.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_out" for 162.236.28.197 at 2017-03-27 21:35:59 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (74.1ms)
+
+
+Started GET "/" for 162.236.28.197 at 2017-03-27 21:36:35 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered home/_header.html.erb (1.0ms)
+Completed 200 OK in 56ms (Views: 55.1ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 162.236.28.197 at 2017-03-27 21:36:37 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"bMw/DZUw+jL3JlQ2+smrTSPkfOvAFQFva5zFEFNV/ZaDIWbTbhNg0Ipeb6rGZUnph2V0yHwSr8Q9KiTH2pSqWA=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://pinterested-monetish.c9users.io/
+Completed 302 Found in 9ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 162.236.28.197 at 2017-03-27 21:36:37 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered home/_header.html.erb (0.4ms)
+Completed 200 OK in 61ms (Views: 60.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 162.236.28.197 at 2017-03-27 21:37:06 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.0ms)
+  Rendered home/_header.html.erb (0.7ms)
+Completed 200 OK in 75ms (Views: 73.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 162.236.28.197 at 2017-03-27 21:37:11 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O0szUP2I4kiKAHdA1YUFIcwSiLPSdpXa8n2JpgU8mO/7t3yVqYpappmgbmgSmv5fvY2H9Nc/aVcPNBxdVpmRrw==", "user"=>{"email"=>"monetharkin@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "monetharkin@live.com"]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-03-27 21:37:11.377595"], ["sign_in_count", 2], ["updated_at", "2017-03-27 21:37:11.379922"], ["id", 1]]
+  [1m[35m (12.3ms)[0m  commit transaction
+Redirected to https://pinterested-monetish.c9users.io/
+Completed 302 Found in 202ms (ActiveRecord: 13.8ms)
+
+
+Started GET "/" for 162.236.28.197 at 2017-03-27 21:37:11 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered home/_header.html.erb (0.6ms)
+Completed 200 OK in 124ms (Views: 123.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 162.236.28.197 at 2017-03-27 21:40:25 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/_header.html.erb (2.9ms)
+Completed 200 OK in 61ms (Views: 60.1ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 162.236.28.197 at 2017-03-27 21:40:33 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"K+0eIKvsJuA0WqmSexz+hZQEKY6a402Qr7kUwFc6voghEGektOJiNzUh9hp++XbNjfQE2/j2/Q/mLuTMH5kqGA=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://pinterested-monetish.c9users.io/
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 162.236.28.197 at 2017-03-27 21:40:33 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  Rendered home/_header.html.erb (0.7ms)
+Completed 200 OK in 51ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 162.236.28.197 at 2017-03-27 21:40:39 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.0ms)
+  Rendered home/_header.html.erb (0.6ms)
+Completed 200 OK in 75ms (Views: 73.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 162.236.28.197 at 2017-03-27 21:40:43 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yCdSyby8YKcv3HgBqQdg00+2QgDGv6RuwKnuqYnAmOPm+Eyijw7l1atvGBHd3ENIZ1djw9LK7ecgte+7aCi4VQ==", "user"=>{"email"=>"monetharkin@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "monetharkin@live.com"]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2017-03-27 21:37:11.377595"], ["current_sign_in_at", "2017-03-27 21:40:44.094190"], ["sign_in_count", 3], ["updated_at", "2017-03-27 21:40:44.095624"], ["id", 1]]
+  [1m[35m (11.0ms)[0m  commit transaction
+Redirected to https://pinterested-monetish.c9users.io/
+Completed 302 Found in 170ms (ActiveRecord: 11.9ms)
+
+
+Started GET "/" for 162.236.28.197 at 2017-03-27 21:40:44 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/_header.html.erb (1.6ms)
+Completed 200 OK in 44ms (Views: 43.1ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for 162.236.28.197 at 2017-03-27 21:40:48 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"evuU+Cf5056/PJCy8fxy1VLcJ+6JTEEB0lm5AmnxSHk+N5h9HLRq8kTITdfnEKZCnueqgNISB3ba0oklsvqY6g=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://pinterested-monetish.c9users.io/
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 162.236.28.197 at 2017-03-27 21:40:48 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  Rendered home/_header.html.erb (0.9ms)
+Completed 200 OK in 75ms (Views: 74.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 162.236.28.197 at 2017-03-27 21:43:24 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+  Rendered home/_header.html.erb (7.2ms)
+Completed 200 OK in 279ms (Views: 277.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 162.236.28.197 at 2017-03-27 21:43:27 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (5.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.5ms)
+  Rendered home/_header.html.erb (0.6ms)
+Completed 200 OK in 76ms (Views: 74.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 162.236.28.197 at 2017-03-27 21:43:29 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WTsSVBJCTGeoKwzwnbDz8oXgnmZ4HzrKxAx6qob6hYJGCzp190B7tVkjim5YvGSSPTWDFYXsp794fHg873Lirw==", "user"=>{"email"=>"monetharkin@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "monetharkin@live.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2017-03-27 21:40:44.094190"], ["current_sign_in_at", "2017-03-27 21:43:30.278625"], ["sign_in_count", 4], ["updated_at", "2017-03-27 21:43:30.279815"], ["id", 1]]
+  [1m[35m (12.6ms)[0m  commit transaction
+Redirected to https://pinterested-monetish.c9users.io/
+Completed 302 Found in 311ms (ActiveRecord: 13.3ms)
+
+
+Started GET "/" for 162.236.28.197 at 2017-03-27 21:43:30 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.6ms)
+  Rendered home/_header.html.erb (0.5ms)
+Completed 200 OK in 63ms (Views: 62.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 162.236.28.197 at 2017-03-27 21:46:05 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+  Rendered home/_header.html.erb (28.2ms)
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `linked_to' for #<#<Class:0x00000004052e78>:0x007f50c5ecc440>
+Did you mean?  link_to):
+     9:         <span class="icon-bar"></span>
+    10:         <span class="icon-bar"></span>
+    11:       </button>
+    12:       <%= linked_to "Pinterested", root_path %>
+    13:     </div>
+    14: 
+    15:     <!-- Collect the nav links, forms, and other content for toggling -->
+  app/views/home/_header.html.erb:12:in `_app_views_home__header_html_erb__3329984690956114242_69992458622920'
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___1303142817652898558_33620780'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.0ms)
+
+
+Started GET "/" for 162.236.28.197 at 2017-03-27 21:47:15 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+  Rendered home/_header.html.erb (28.6ms)
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `linked_to' for #<#<Class:0x00000004052e78>:0x007f50c5e06fb0>
+Did you mean?  link_to):
+     9:         <span class="icon-bar"></span>
+    10:         <span class="icon-bar"></span>
+    11:       </button>
+    12:       <%= linked_to "Pinterested", root_path, class: "navbar-brand" %>
+    13:     </div>
+    14: 
+    15:     <!-- Collect the nav links, forms, and other content for toggling -->
+  app/views/home/_header.html.erb:12:in `_app_views_home__header_html_erb__3329984690956114242_69992442008320'
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___1303142817652898558_33620780'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.1ms)
+
+
+Started GET "/" for 162.236.28.197 at 2017-03-27 21:47:43 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+  Rendered home/_header.html.erb (1.1ms)
+Completed 200 OK in 78ms (Views: 76.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/home/about" for 162.236.28.197 at 2017-03-27 21:47:47 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#about as HTML
+  Rendered home/about.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/_header.html.erb (2.1ms)
+Completed 200 OK in 83ms (Views: 82.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 162.236.28.197 at 2017-03-27 21:47:49 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+  Rendered home/_header.html.erb (0.3ms)
+Completed 200 OK in 61ms (Views: 60.1ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for 162.236.28.197 at 2017-03-27 21:47:52 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Svu5Stc3QO8U3Q871m04OYusqySbPgR9vgIDkKqFOPtofeJf5efAAKrKVLXceudm77se/g6N1VruTqUdOL3SmA=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://pinterested-monetish.c9users.io/
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 162.236.28.197 at 2017-03-27 21:47:52 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered home/_header.html.erb (0.5ms)
+Completed 200 OK in 54ms (Views: 53.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 162.236.28.197 at 2017-03-27 21:47:58 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered home/_header.html.erb (0.5ms)
+Completed 200 OK in 61ms (Views: 60.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 162.236.28.197 at 2017-03-27 21:48:00 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (19.8ms)
+  Rendered home/_header.html.erb (0.8ms)
+Completed 200 OK in 105ms (Views: 100.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 162.236.28.197 at 2017-03-27 21:48:02 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sLzjV1cXFEgjivRh1rTSkkQXfy7BLYzrynwUSIcKP47WC/Q+/dNtSUW8ndIUwNzZ4H6WMSG3uywnbpPIMbCPEw==", "user"=>{"email"=>"monetharkin@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "monetharkin@live.com"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2017-03-27 21:43:30.278625"], ["current_sign_in_at", "2017-03-27 21:48:02.696781"], ["sign_in_count", 5], ["updated_at", "2017-03-27 21:48:02.698467"], ["id", 1]]
+  [1m[36m (20.9ms)[0m  [1mcommit transaction[0m
+Redirected to https://pinterested-monetish.c9users.io/
+Completed 302 Found in 305ms (ActiveRecord: 21.8ms)
+
+
+Started GET "/" for 162.236.28.197 at 2017-03-27 21:48:02 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+  Rendered home/_header.html.erb (0.7ms)
+Completed 200 OK in 82ms (Views: 81.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 162.236.28.197 at 2017-03-27 21:48:35 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (3.4ms)
+  Rendered home/_header.html.erb (0.5ms)
+Completed 200 OK in 62ms (Views: 60.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 162.236.28.197 at 2017-03-27 21:50:59 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (40.7ms)
+  Rendered home/_header.html.erb (16.1ms)
+Completed 200 OK in 713ms (Views: 711.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/edit" for 162.236.28.197 at 2017-03-27 21:51:02 +0000
+Cannot render console from 162.236.28.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (10.9ms)
+  Rendered home/_header.html.erb (0.5ms)
+Completed 200 OK in 77ms (Views: 74.8ms | ActiveRecord: 0.2ms)

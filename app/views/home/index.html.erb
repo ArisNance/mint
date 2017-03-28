@@ -2,9 +2,13 @@
     <h1>Monetish Pinterested App!</h1>
     <p>Find me in app/views/home/index.html.erb</p>
     
-    <%= link_to "Login", new_user_session_path, class: "btn btn-default" %>
-    <!--<button type="button" class="btn btn-default">Login</button>-->
+    <% if user_signed_in? %>
+        <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "btn btn-primary" %>
+    <% else %>
+        <%= link_to "Login", new_user_session_path, class: "btn btn-default" %>
+        <!--<button type="button" class="btn btn-default">Login</button>-->
     
-    <%= link_to "Join", new_user_registration_path, class: "btn btn-primary" %>
-    <!--<button type="button" class="btn btn-primary">Join</button>-->
+        <%= link_to "Join", new_user_registration_path, class: "btn btn-primary" %>
+        <!--<button type="button" class="btn btn-primary">Join</button>-->
+    <% end %>
 </div>
