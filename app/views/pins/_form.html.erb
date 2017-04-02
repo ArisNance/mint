@@ -12,8 +12,16 @@
   <% end %>
 
   <div class="form-group">
+    <%= f.label :name %><br>
+    <%= f.text_field :title, placeholder: 'Martin Luther King Jr', class: "form-control" %><br>
     <%= f.label :description %><br>
-    <%= f.text_field :description, class: "form-control" %>
+    <%= f.text_area :description, class: "form-control" %><br>
+    <%= f.label :image %><br>
+    <!--add file size validation-->
+    <%= f.text_field :image_url, placeholder: 'Recommended  800 x 500 | http://www.lavail.io/url_to_company_logo.png', class: "form-control" %><br>
+    <%= f.label :source %><br>
+    <%= f.text_field :wiki_url, placeholder: 'http://wikipedia.org', class: "form-control" %><br>
+
   </div>
   <div class="actions">
     <%= f.submit "Submit",class: "btn btn-primary" %>

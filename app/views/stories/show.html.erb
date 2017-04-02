@@ -1,0 +1,142 @@
+<p id="notice"><%= notice %></p>
+
+<head>
+ <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<!--google font-->
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+<style>
+.work {
+
+    background-size: cover;
+}
+
+#wrapper-navbar{
+    margin-top: -10px;
+}
+
+  #wrapper-copyright{
+    display:none;
+  }
+  
+.img-post {
+    width: 100%;
+}
+  
+.title-text{
+	font-family: Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 22px;
+	font-weight:600;
+	color:#686868;
+	line-height:125%;
+	height:auto;
+	width:calc(100% - 88px);
+	margin-top:8px;
+}
+
+.title-text-2{
+	font-family: Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 15px;
+	font-weight:400;
+	color:#A1A1A1;
+	line-height:125%;
+	height:auto;
+	width:calc(100% - 88px);
+	margin-top:8px;
+	display: hidden;
+}
+
+.post-content {
+    margin-top: 12%;
+}
+
+#post-content {
+    line-height: 42px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: 'Playfair Display', serif;
+}
+
+.work{
+    padding-top: 6%;
+}
+
+.img-caption {
+    margin-top: -20%;
+}
+</style>
+</head>
+
+ <%= image_tag @story.header_image, class: "img-post" %>
+ <!--dont remove-->
+ <div class="img-caption" style="font-size: 20px;"></div>
+ <!--dont remove end-->
+ 
+<div id="wrapper-container">
+    
+		<div class="container object">
+
+			<div id="main-container-image">
+                <div class="title-item">
+                	<div class="title-icon"></div>
+                    <div class="title-text"><%= @story.title %></div>
+                    <div class="title-text-2">Published: <%= @story.created_at.strftime("%b %d, %Y") %></div>
+                    <br>
+                    <!--User controls-->
+                    <% if user_signed_in? %>
+                    <%= link_to edit_story_path(@story) do %><i style="font-size: 15px;" class="fa fa-pencil"></i><% end %> &nbsp &nbsp| &nbsp
+                    <%= link_to 'Back', stories_path %>
+                    <% end %>
+                </div>
+				<div class="work">
+				 
+					<figure class="white">
+							 <!--<img src="img/psd-4.jpg" alt="" />-->
+        <!--                 <div id="wrapper-part-info">-->
+        <!--                     <div class="part-info-image-single">-->
+                               <!--share on twitter-->
+        <!--                       <i class="fa fa-twitter" aria-hidden="true"></i>-->
+                                
+        <!--                     </div>-->
+						  <!--</div>-->
+                    </figure>	
+                    </div>
+                    <!--content start-->
+					<div class="post-content">
+					    <dl>
+            			    <dt style="font-size: 40px; padding-bottom: 60px; color: rgb(104, 104, 104); text-align:center;"><%= @story.title %></dt>
+            					<p><%= simple_format(@story.description, id: "post-content") %></p>
+            					<br>
+            					<!--source url-->
+            					<% if @story.twitter_url.blank? && @story.facebook_url.blank? %>
+                                    <p>No Twitter Added</p><br>
+                                    <p>No Facebook Added</p>
+                                <% elsif @story.facebook_url.blank? %>
+                                    <p>No Facebook Added</p><br>
+                                <%= link_to @story.twitter_url, target: "_blank" do %><i style="font-size: 30px; color: #009688;" class="fa fa-twitter" title="Publishers Twitter"></i><% end %>
+                                <% elsif @story.twitter_url.blank? %>
+                                    <p>No Twitter Added</p><br>
+                                <%= link_to @story.facebook_url, target: "_blank" do %><i style="font-size: 30px; color: #009688;" class="fa fa-facebook" title="Publishers Facebook"></i><% end %>
+                                <% else %>
+                                <%= link_to @story.facebook_url, target: "_blank" do %><i style="font-size: 30px; color: #009688;" class="fa fa-facebook" title="Publishers Facebook"></i><% end %>
+                                    <br>
+                                    <br>
+            					<%= link_to @story.twitter_url, target: "_blank" do %><i style="font-size: 30px; color: #009688;" class="fa fa-twitter" title="Publishers Twitter"></i><% end %>
+            					<% end %>
+          						 </dl>
+          						  <div class="social-content">
+          						    <div class="facebook object">
+                    				<a href="#" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    				<a href="#" target="blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    			</div>
+          						  </div>
+						          </div>
+                  </div>
+                </div>
+              </div>  
+

@@ -1,0 +1,42 @@
+<style>
+#wrapper-copyright {
+  display: none;
+}
+
+#main-container-footer{
+  display: none;
+}
+</style>
+<%= form_for(@story) do |f| %>
+  <% if @story.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@story.errors.count, "error") %> prohibited this story from being saved:</h2>
+
+      <ul>
+      <% @story.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :title %><br>
+    <%= f.text_field :title, placeholder: 'Aris Nance', class: "form-control" %><br>
+    
+    <%= f.label :image %><br>
+    <%= f.text_field :header_image, placeholder: 'Recommended  800 x 500 | http://www.lavail.io/url_to_person_image.png', class: "form-control" %><br>
+    
+    <%= f.label :Share_Your_Story %><br>
+    <%= f.text_area :description, placeholder: 'Whats their Story?', class: "form-control" %><br>
+
+    <%= f.label :twitter %><br>
+    <%= f.text_field :twitter_url, required: false, placeholder: 'http://www.lavail.io/ArisNance | Leave blank to remain anonymous', class: "form-control" %><br>
+    
+    <%= f.label :facebook %><br>
+    <%= f.text_field :facebook_url, placeholder: 'http://www.facebook.com/ArisNance | Leave blank to remain anonymous', class: "form-control" %><br>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

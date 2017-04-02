@@ -11,16 +11,59 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170328214344) do
+ActiveRecord::Schema.define(version: 20170330210013) do
+
+  create_table "people", force: :cascade do |t|
+    t.string   "name"
+    t.string   "bio"
+    t.string   "linkedin_url"
+    t.string   "twitter_url"
+    t.string   "facebook_url"
+    t.string   "person_image"
+    t.string   "trait_one"
+    t.string   "trait_two"
+    t.string   "trait_three"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
 
   create_table "pins", force: :cascade do |t|
     t.string   "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.integer  "user_id"
+    t.string   "wiki_url"
+    t.string   "image_url"
+    t.string   "title"
   end
 
   add_index "pins", ["user_id"], name: "index_pins_on_user_id"
+
+  create_table "startups", force: :cascade do |t|
+    t.string   "company_name"
+    t.string   "location"
+    t.string   "founder"
+    t.string   "team_two"
+    t.string   "team_three"
+    t.string   "web_url"
+    t.string   "twitter_url"
+    t.string   "facebook_url"
+    t.string   "option_url"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.string   "summary"
+  end
+
+  create_table "stories", force: :cascade do |t|
+    t.string   "title"
+    t.string   "content"
+    t.string   "header_image"
+    t.string   "facebook_url"
+    t.string   "twitter_url"
+    t.string   "description"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

@@ -1,17 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workspace</title>
+  <title>mints</title>
+  
+  <!-- Behavioral Meta Data -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="icon" type="image/png" href="assets/mints-logo.png">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,900,900italic,700italic,700,500italic,400italic,500,300italic,300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<!--font awesome-->
+	<script src="https://use.fontawesome.com/9eab927523.js"></script>
+	
+	<!--sheets and scripts-->
+  <%= stylesheet_link_tag    'style', media: 'all', 'data-turbolinks-track' => true %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  
+  <!--Tooltipster-->
+  <link rel="stylesheet" type="text/css" href="tooltipster/dist/css/tooltipster.bundle.min.css" />
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script type="text/javascript" src="tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.tooltip').tooltipster({
+
+            });
+        });
+    </script>
+  <!--end-->
 </head>
 <body>
-  
+  <%= render 'home/navi' %>
   <%= render 'home/header' %>
   
-  
-<div class="container">
   
   <% flash.each do |name, msg| %>
     <%= content_tag(:div, msg, class: "alert alert-info") %>
@@ -19,7 +44,16 @@
 
   <%= yield %>
 
-</div>
 
+  <%= javascript_include_tag 'main', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'jquery.localScroll.min', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'jquery.scrollTo.min', 'data-turbolinks-track' => true %>
+  
+  <%= render 'home/footer' %>
+  
+  <!--alert fadeout-->
+  <script>
+    $(".alert" ).fadeOut(3000);
+  </script>
 </body>
 </html>

@@ -1,0 +1,57 @@
+<div id="wrapper-navbar">
+		<div class="navbar object">
+    		<div id="wrapper-sorting">
+            <div id="wrapper-title-1">
+            <!--<div class="top-rated object">BLacK History</div>-->
+            <%= link_to 'black history', home_index_path, class: "top-rated object", title: "Discover prominent figures, and add your own." %>
+            	<div id="fleche-nav-1"></div>
+    		</div>
+            
+            <div id="wrapper-title-2">
+            <!--<a href="#"><div class="recent object">Leaders Today</div></a>-->
+            <%= link_to 'mints', people_path, class: "top-rated object", title: "See who's open to networking." %>
+                <div id="fleche-nav-2"></div>
+    		</div>
+            
+            <div id="wrapper-title-3">
+            <!--<a href="#"><div class="oldies object">StartUps</div></a>-->
+            <%= link_to 'startups', startups_path, class: "oldies object", title: "StartUps in our community" %>
+                <div id="fleche-nav-3"></div>
+    		</div>
+    		
+    		  <div id="wrapper-title-3">
+            <!--<a href="#"><div class="oldies object">Stories</div></a>-->
+            <%= link_to 'stories', stories_path, class: "oldies object", title: "Read stories from people just like you. " %>
+                <div id="fleche-nav-3"></div>
+    		</div>
+            </div>
+            <div id="wrapper-bouton-icon">
+                <% if user_signed_in? %>
+            	<div id="bouton-ai"><%= link_to "Logout", destroy_user_session_path, method: :delete %></div>
+            	<%= link_to edit_user_registration_path, id: "bouton-psd" do %><i style="font-size: 15px;" class="fa fa-pencil" title="Edit Account"></i><% end %>
+            	<% else %>
+            	<div id="bouton-theme"><%= link_to "Login", new_user_session_path %></div>
+            	<div id="bouton-font"><%= link_to "Join", new_user_registration_path %></div>
+            	<!--<div id="bouton-photo"><img src="assets/icon-photo.svg" alt="photo" title="Photo" height="28" width="28"></div>-->
+            	<!--<div id="bouton-premium"><img src="assets/icon-premium.svg" alt="premium" title="Premium" height="28" width="28"></div>-->
+            	<% end %>
+			</div>
+    	</div>
+    </div>
+<!-- HEADER -->
+
+<div id="wrapper-header">
+	<div id="main-header" class="object">
+		<div class="logo">
+		<%= link_to image_tag("mints-logo.png"), root_path %>
+		</div>
+		
+        <div id="main_tip_search"> 
+			<form>
+				<input type="text" name="search" id="tip_search_input" list="search" autocomplete=off required>
+			</form>
+		</div>
+        <div id="stripes"></div>
+    </div>
+</div>
+

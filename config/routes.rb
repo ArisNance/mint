@@ -1,11 +1,16 @@
 Rails.application.routes.draw do
+  resources :stories
+  resources :startups
+  resources :people
   resources :pins
   devise_for :users
-  root 'home#index'
+  root 'home#landing'
   
+  # get 'home/index'
+ devise_scope :user do get 'users/sign_out' => "devise/sessions#destroy"
+ end
   get 'home/index'
   get 'home/about'
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

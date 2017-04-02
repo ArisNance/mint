@@ -1,0 +1,56 @@
+<style>
+#wrapper-copyright {
+  display: none;
+}
+
+#main-container-footer{
+  display: none;
+}
+</style>
+<%= form_for(@person) do |f| %>
+  <% if @person.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@person.errors.count, "error") %> prohibited this person from being saved:</h2>
+
+      <ul>
+      <% @person.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :name %><br>
+    <%= f.text_field :name, placeholder: 'Aris Nance', class: "form-control" %><br>
+    
+    <%= f.label :image %><br>
+    <%= f.text_field :person_image, placeholder: 'Recommended  800 x 500 | http://www.lavail.io/url_to_person_image.png', class: "form-control" %><br>
+    
+    <%= f.label :bio %><br>
+    <%= f.text_area :bio, placeholder: 'Whats their Story?', class: "form-control" %><br>
+    
+    <%= f.label :twitter %><br>
+    <%= f.text_field :twitter_url, placeholder: 'http://www.lavail.io/ArisNance', class: "form-control" %><br>
+    
+    <%= f.label :facebook %><br>
+    <%= f.text_field :facebook_url, placeholder: 'http://www.facebook.com/ArisNance', class: "form-control" %><br>
+    
+    <%= f.label :Linkedin %><br>
+    <%= f.text_field :linkedin_url, placeholder: 'https://www.linkedin.com/in/arisnance/', class: "form-control" %><br>
+    
+    <%= f.label :What_do_you_do_for_a_living? %><br>
+    <%= f.text_field :trait_one, placeholder: 'Founder of HireMe Seattle', class: "form-control" %><br>
+    
+    <%= f.label :Accomplishment %><br>
+    <%= f.text_field :trait_two, placeholder: 'Honors, Founder, Tedtalk.', class: "form-control" %><br>
+    
+    <%= f.label :Where_are_you_currently_employed? %><br>
+    <%= f.text_area :trait_three, placeholder: 'In your own words: ', class: "form-control" %><br>
+    
+    
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

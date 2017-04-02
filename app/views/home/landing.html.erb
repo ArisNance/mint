@@ -1,0 +1,110 @@
+<head>
+
+<%= stylesheet_link_tag    'landing', media: 'all', 'data-turbolinks-track' => true %>
+<style>
+
+#wrapper-copyright {
+  display: none;
+}
+
+#main-container-footer{
+  display: none;
+}
+#wrapper-bouton-icon {
+    display: none;
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+#div-text {
+    left: 67%;
+    width: 29em;
+	}
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+.navbar .object {
+display: none;
+	}
+}
+
+p {
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	display: inline-block;
+	border: 4px double rgba(255,255,255,.25);
+	border-width: 4px 0;
+	padding: 1.5em 0em;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	width: 40em;
+	margin: 0 0 0 -20em;
+	color: #1fc397;
+}
+
+body { font: 400 1em/1.5 "Neuton"; background: #607d8b; color: rgba(255,255,255,.25); text-align: center; margin: 0 }
+
+p span {
+
+	font: 700 5em/1 "Oswald", sans-serif;
+	letter-spacing: 50;
+	padding: .25em 0 .325em;
+	display: block;
+	margin: 0 auto;
+	text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+/* Clip Background Image */
+
+	background: url(http://static.colourlovers.com/uploads/images/4/44/44982.pic.jpg) repeat-y;
+	-webkit-background-clip: text;
+
+/* Animate Background Image */
+
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: aitf 10s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+	-webkit-transform: translate3d(0,0,0);
+	-webkit-backface-visibility: hidden;
+}
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+	0% { background-position: -200% 50%; }
+	100% { background-position: 250% 50%; }
+  0% { background-position: -100% 50%; }
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+#hide-mobile {
+  display: none;
+	}
+}
+
+</style>
+</head>
+
+<link href="http://fonts.googleapis.com/css?family=Oswald:700|Neuton" rel="stylesheet" type="text/css">
+
+<p id="div-text"> <em style="font-size: 10px;">Minorities In Todays Society</em><span>mints</span> &mdash; Showcasing the history, efforts, and talents of the underpresented communities. &mdash; <a href="#" target="blank"><i class="fa fa-twitter" aria-hidden="true" style="font-size: 20px;"></i></a>
+    <br>
+    <br>
+    <br>
+    <% if user_signed_in? %>
+    <!--mobile display link-->
+    <%= link_to 'Go Home', home_index_path, id: "hide-mobile" %>
+    <% else %>
+    <%= link_to 'Join Now', new_user_registration_path %>
+    <br>
+    <br>
+    or
+    <br>
+    <br>
+    <%= link_to 'SignIn', new_user_session_path %>
+    <% end %>
+</p>
+
+<!--Call to action-->
+<a href="https://twitter.com/arisnance" target="blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
