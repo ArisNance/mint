@@ -35,10 +35,18 @@ Rails.application.configure do
   # Checks for improperly declared sprockets dependencies.
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
+<<<<<<< HEAD
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
   
   #added per advise of devise gem installed instructions
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+=======
+  
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+  # Raises error for missing translations
+  # config.action_view.raise_on_missing_translations = true
+>>>>>>> b9d9ba8724cb59d93bc1e30b3b667ae0d85969b7
 end

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   resources :stories
   resources :startups
   resources :people
@@ -11,6 +12,15 @@ Rails.application.routes.draw do
  end
   get 'home/index'
   get 'home/about'
+=======
+  
+  root 'home#index'
+  
+  devise_for :users
+  
+  # get 'home/index'
+
+>>>>>>> b9d9ba8724cb59d93bc1e30b3b667ae0d85969b7
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
