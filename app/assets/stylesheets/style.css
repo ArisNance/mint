@@ -1028,6 +1028,11 @@ body,html{
 	}
 }
 
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+#wrapper-header {
+	}
+}
+
 /*end*/
  
   
