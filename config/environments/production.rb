@@ -77,10 +77,10 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
   
-<<<<<<< HEAD
+ 
   #added per advise of device instructions
   config.action_mailer.default_url_options = { host: 'pinterested-monetish.c9users.io/'}
-=======
+ 
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
->>>>>>> b9d9ba8724cb59d93bc1e30b3b667ae0d85969b7
+  
 end

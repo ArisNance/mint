@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<<<<<<< HEAD
+ 
   <title>mints</title>
   
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <!-- Behavioral Meta Data -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -34,6 +35,9 @@
     </script>
   <!--end-->
 </head>
+
+
+
 <body>
   <%= render 'home/navi' %>
   <%= render 'home/header' %>
@@ -53,37 +57,12 @@
   <%= render 'home/footer' %>
   
   <!--alert fadeout-->
-  <script>
-    $(".alert" ).fadeOut(3000);
-  </script>
-=======
-  <title>mint</title>
+<script>
+  $(".alert" ).fadeOut(3000);
+</script>
+<script>
+  $("#notice" ).fadeOut(3000);
+</script>
+ </body>
   
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-<!-- Behavioral Meta Data -->
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="icon" type="image/png" href="assets/small-logo-01.png">
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,900,900italic,700italic,700,500italic,400italic,500,300italic,300' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <!--custom stylesheet-->
-  <%= stylesheet_link_tag    'style', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<!--replace these -->
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
-<%= yield %>
-
-<%= javascript_include_tag 'main', 'data-turbolinks-track' => true %>
-<%= javascript_include_tag 'jquery.localScroll.min', 'data-turbolinks-track' => true %>
-<%= javascript_include_tag 'jquery.scrollTo.min', 'data-turbolinks-track' => true %>
->>>>>>> b9d9ba8724cb59d93bc1e30b3b667ae0d85969b7
-</body>
 </html>
