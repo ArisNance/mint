@@ -11,15 +11,17 @@
   <link rel="icon" type="image/png" href="assets/mints-logo.png">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,900,900italic,700italic,700,500italic,400italic,500,300italic,300' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-	<!--font awesome-->
-	<script src="https://use.fontawesome.com/9eab927523.js"></script>
-	
-	<!--sheets and scripts-->
-  <%= stylesheet_link_tag    'style', media: 'all', 'data-turbolinks-track' => true %>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'main', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'jquery.localScroll.min', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'jquery.scrollTo.min', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <!--font awesome-->
+	<script src="https://use.fontawesome.com/9eab927523.js"></script>
+	<!--sheets and scripts-->
+  <%= stylesheet_link_tag 'style', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   
   <!--Tooltipster-->
   <link rel="stylesheet" type="text/css" href="tooltipster/dist/css/tooltipster.bundle.min.css" />
@@ -48,11 +50,6 @@
   <% end %>
 
   <%= yield %>
-
-
-  <%= javascript_include_tag 'main', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'jquery.localScroll.min', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'jquery.scrollTo.min', 'data-turbolinks-track' => true %>
   
   <%= render 'home/footer' %>
   
