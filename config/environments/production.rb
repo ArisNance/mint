@@ -32,7 +32,7 @@ Rails.application.configure do
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
-
+  config.serve_static_files = false
   # Asset digests allow you to set far-future HTTP expiration dates on all assets,
   # yet still be able to expire them through the digest params.
   config.assets.digest = true
@@ -78,8 +78,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  
- 
+
   #added per advise of device instructions
   config.action_mailer.default_url_options = { host: 'mints-arisnance.c9users.io/'}
  
