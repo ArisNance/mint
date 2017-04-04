@@ -60,7 +60,7 @@
 						<% @people.each do |person| %>
 						<figure class="white">
 							<a href="#" style="text-decoration: none;pointer-events: none; cursor: default;">
-								<%= image_tag(person.person_image, class: 'img-fluid', style: "height: 182px; width: 236px;") %>
+								<%= image_tag(person.person_image, class: 'img-fluid') %>
 								<dl>
 									<dt><%= link_to person.name, person %></dt>
 									<dd><%= truncate(person.bio, length: 200) { link_to "Continue", person } %></dd>	

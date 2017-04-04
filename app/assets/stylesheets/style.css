@@ -896,10 +896,15 @@ form {
 	margin-left:-357.5px;
 }
 #main-container-menu {
-	display:none;
+	display:none !important;
 }
 }
 
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+#main-container-menu {
+  display: none;
+	}
+}
  
 /* Even smaller viewports � more tablets, etc. */
  
@@ -911,8 +916,8 @@ form {
 	width:585px;
 	margin-left:-292.5px;
 }   
-#wrapper-bouton-icon,#main_tip_search{
-	display:none;
+#wrapper-bouton-icon, #main_tip_search{
+	width: 110%;
 }
 #stripes {
 	display:block;
@@ -1041,6 +1046,32 @@ form {
 	 height: 80px !important;
 	}
 }
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+input {
+	 width: 170% !important;
+	}
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+form {
+	 margin-left: 12% !important;
+	}
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+.actions {
+	 width: 50%;
+	}
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+textarea.form-control {
+    height: 100px;
+    width: 170%;
+	}
+}
+
 
 
 /*end*/
