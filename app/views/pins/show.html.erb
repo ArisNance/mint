@@ -118,9 +118,7 @@
           						 </dl>
           						  <div class="social-content">
           						    <div class="facebook object">
-                    				<a href="#" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    				<a href="#" target="blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    				<a href="#" target="blank"><i class="fa fa-storyterest" aria-hidden="true"></i></a>
+                    				<%= link_to "http://twitter.com/home?status=Intro to History 101. An individual named #{@pin.title} #{story_url(@pin)}", target: "_blank" do %><i style="font-size: 30px; color: #009688;" class="fa fa-twitter" title="Share on Twitter"></i><% end %>
                     			</div>
           						  </div>
 						          </div>
