@@ -28,6 +28,9 @@
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.0.min.js"></script>
     <script type="text/javascript" src="tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+    <!-- google analytics -->
+    <%= analytics_init if GoogleAnalytics.valid_tracker? %>
+    
     <script>
         $(document).ready(function() {
             $('.tooltip').tooltipster({
