@@ -23,6 +23,22 @@ body {
 	display: block;
 }
 
+.alert-info {
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    color: #31708f;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 40%;
+}
+
 @font-face {
     font-family: 'socialicoregular';
     src: url('font/socialico-webfont.eot');

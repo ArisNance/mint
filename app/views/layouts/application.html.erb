@@ -44,14 +44,13 @@
 
 
 <body>
+    <% flash.each do |name, msg| %>
+  <%= content_tag(:div, msg, class: "alert alert-info") %>
+  <% end %>
+  
   <%= render 'home/navi' %>
   <%= render 'home/header' %>
   
-  
-
-  <% flash.each do |name, msg| %>
-  <%= content_tag(:div, msg, class: "alert alert-info") %>
-  <% end %>
   <%= yield %>
   
   <%= render 'home/footer' %>
