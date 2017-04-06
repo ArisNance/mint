@@ -2,7 +2,7 @@
 <html>
 <head>
  
-  <title>mints</title>
+  <title>Mints | Beta</title>
   
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <!-- Behavioral Meta Data -->
@@ -48,10 +48,10 @@
   <%= render 'home/header' %>
   
   
-  <% flash.each do |name, msg| %>
-    <%= content_tag(:div, msg, class: "alert alert-info") %>
-  <% end %>
 
+  <% flash.each do |name, msg| %>
+  <%= content_tag(:div, msg, class: "alert alert-info") %>
+  <% end %>
   <%= yield %>
   
   <%= render 'home/footer' %>

@@ -1,7 +1,4 @@
 
-
-<p id="notice"><%= notice %></p>
-
 <style>
 #wrapper-navbar {
   margin-top: -10px;
@@ -46,21 +43,21 @@
 	transform:rotateY(180deg);
 	transition:transform .4s ease-in-out 0s;
 }
-.profile-card-wrap .content:before{
-	top:50%;
-	right:40px;
-	height:30px;
-	font-size:18px;
-	border:inherit;
-	padding:2px 8px;
-	margin-top:-10px;
-	line-height:24px;
-	background:inherit;
-	content:attr(data-text);
-	backface-visibility:visible;
-	transform:rotateY(-180deg) scale(1);
-	transition:transform .4s ease-in-out 0s;
-}
+/*.profile-card-wrap .content:before{*/
+/*	top:50%;*/
+/*	right:40px;*/
+/*	height:30px;*/
+/*	font-size:18px;*/
+/*	border:inherit;*/
+/*	padding:2px 8px;*/
+/*	margin-top:-10px;*/
+/*	line-height:24px;*/
+/*	background:#f4f4f4;*/
+/*	content:attr(data-text);*/
+/*	backface-visibility:visible;*/
+/*	transform:rotateY(-180deg) scale(1);*/
+/*	transition:transform .4s ease-in-out 0s;*/
+/*}*/
 .profile-card-wrap .content .title{
 	font-size:24px;
 	font-weight:500;
@@ -234,26 +231,43 @@
 	<hr style="border-top: 1px solid #00d49b;">
 	<strong>Looking For</strong><br> <br> <%= @person.trait_two %><br>
 	<hr style="border-top: 1px solid #00d49b;">
-	<strong>Media</strong><br> <br> <%= link_to @person.twitter_url do %><i style="font-size: 30px;" class="fa fa-twitter"></i><% end %><br>
+	<strong>Media</strong><br> <br>
+	<!--social media links-->
+<dl>
+	<br>
+	<!--source url-->
+	<% if @person.twitter_url.blank? && @person.facebook_url.blank? %>
+        <p>No Twitter Added</p><br>
+        <p>No Facebook Added</p>
+        <br>
+    <%= link_to @person.linkedin_url, target: "_blank" do %><i style="font-size: 30px; color: #009688;" class="fa fa-linkedin" title="Users Linkedin"></i><% end %>
+    <% elsif @person.facebook_url.blank? %>
+        <p>No Facebook Added</p><br>
+    <%= link_to @person.twitter_url, target: "_blank" do %><i style="font-size: 30px; color: #009688;" class="fa fa-twitter" title="Users Twitter"></i><% end %>
+    <div id="spacer"></div>
+    <%= link_to @person.linkedin_url, target: "_blank" do %><i style="font-size: 30px; color: #009688;" class="fa fa-linkedin" title="Users Linkedin"></i><% end %>
+    <% elsif @person.twitter_url.blank? %>
+        <p>No Twitter Added</p><br>
+    <%= link_to @person.facebook_url, target: "_blank" do %><i style="font-size: 30px; color: #009688;" class="fa fa-facebook" title="Users Facebook"></i><% end %>
+    <div id="spacer"></div>
+    <%= link_to @person.linkedin_url, target: "_blank" do %><i style="font-size: 30px; color: #009688;" class="fa fa-linkedin" title="Users Linkedin"></i><% end %>
+    <% else %>
+    <%= link_to @person.facebook_url, target: "_blank" do %><i style="font-size: 30px; color: #009688;" class="fa fa-facebook" title="Users Facebook"></i><% end %>
+    <div id="spacer"></div>
+    <%= link_to @person.linkedin_url, target: "_blank" do %><i style="font-size: 30px; color: #009688;" class="fa fa-linkedin" title="Users Linkedin"></i><% end %>
+ 		<div id="spacer"></div>
+	<%= link_to @person.twitter_url, target: "_blank" do %><i style="font-size: 30px; color: #009688;" class="fa fa-twitter" title="Users Twitter"></i><% end %>
 	<div id="spacer"></div>
-	<%= link_to @person.facebook_url do %><i style="font-size: 30px;" class="fa fa-facebook"></i><% end %>
-	<div id="spacer"></div>
-	<%= link_to @person.linkedin_url do %><i style="font-size: 30px;" class="fa fa-linkedin"></i><% end %>
+	
+	<% end %>
+  </dl>
+	<!--social end-->
+	<hr style="border-top: 1px solid #00d49b;">
 	</div>
+	<div id="spacer"></div>
 	<!--leader info end-->
 	<div class="link-info">
-		<div class="social">
-			<!-- Facebook link-->
-      		<%= link_to @person.facebook_url, class: "link fb" do %><i class="fa fa-facebook"></i><% end %>
-			<!--Twitter-->
-			<%= link_to @person.twitter_url, class: "link tw" do %><i class="fa fa-twitter"></i><% end %>
-			<!--Gitbub-->
-			<!--Portfolio-->
-			<!--Linkedin-->
-			<%= link_to @person.linkedin_url, class: "link li" do %><i class="fa fa-linkedin"></i><% end %>
-			<!--<a class="link yt" href="https://youtube.com/" target="_blank"><i class="fa fa-youtube-play"></i></a>-->
-			<!--<a class="link gp" href="https://plus.google.com/114365866127436577739/" target="_blank"><i class="fa fa-google-plus"></i></a>-->
-		</div>
+
 			<% if user_signed_in? %>
 		    <%= link_to edit_person_path @person do %><i style="font-size: 15px;" class="fa fa-pencil"></i><% end %> &nbsp &nbsp| &nbsp
 		    <%= link_to 'Back', people_path %>
