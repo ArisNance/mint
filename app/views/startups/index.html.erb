@@ -102,6 +102,7 @@
 								<%= image_tag(startup.option_url, class: 'img-fluid') %>
 								<dl>
 									<dt><%= link_to startup.company_name, startup %></dt>
+									<br>
 									<dd><%= truncate(startup.summary, length: 200) { link_to "Continue", startup } %></dd>	
 								</dl>
 							</a>

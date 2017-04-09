@@ -553,8 +553,8 @@ form {
     font-size: 15px;
 	font-weight:400;
 	color:#666;
-	margin-left:10px;
-	height:44px;
+	margin-left:10%;
+	/*height:44px;*/
 }
 
 .part-info-image{

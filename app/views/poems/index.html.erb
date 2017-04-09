@@ -101,13 +101,13 @@
 							<a href="#" style="text-decoration: none;pointer-events: none; cursor: default;">
 								<%= image_tag(poem.header_image, class: 'img-fluid') %>
 								<dl>
-									<dt><%= link_to poem.title, poem %></dt><br>
+									<dt>by <%= link_to poem.name, poem %></dt><br>
 									<dd><%= truncate(poem.content, length: 100) { link_to "Continue", poem } %></dd>	
 								</dl>
 							</a>
               <div id="wrapper-part-info">
               <!--<div class="part-info-image"><img src="assets/icon-psd.svg" alt="" width="28" height="28"/></div>-->
-              <div id="part-info"><%= poem.name %></div>
+              <div id="part-info"><%= poem.title %></div>
 							</div>
              </figure>	
 						<% end %>
