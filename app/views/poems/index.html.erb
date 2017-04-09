@@ -1,0 +1,160 @@
+<p id="notice"><%= notice %></p>
+
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<style>
+#wrapper-navbar{
+    margin-top: -10px;
+}
+
+.img-fluid {
+	width: 440px;
+	height: 330px;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<a name="ancre"></a>
+
+<!-- CACHE -->
+<div class="cache"></div>
+
+
+<!-- NAVBAR -->
+
+<!--moved to partial-->
+
+<!-- FILTER -->	
+
+	<div id="main-container-menu" class="object">
+    	<div class="container-menu">
+        	
+            <div id="main-cross">
+            	<div id="cross-menu"></div>
+            </div>
+            
+            <div id="main-small-logo">
+            	<div class="small-logo"></div>
+            </div>
+            
+            <div id="main-premium-ressource">
+                <div class="premium-ressource"><a href="#">Premium resources</a></div>
+            </div>
+            
+            <div id="main-themes">
+                <div class="themes"><a href="#">Latest themes</a></div>
+            </div>
+            
+            <div id="main-psd">
+                <div class="psd"><a href="#">PSD goodies</a></div>
+            </div>
+                
+            <div id="main-ai">
+                <div class="ai"><a href="#">Illustrator freebies</a></div>
+            </div>
+            
+            <div id="main-font">
+                <div class="font"><a href="#">Free fonts</a></div>
+            </div>
+            
+            <div id="main-photo">
+                <div class="photo"><a href="#">Free stock photos</a></div>
+            </div>
+            
+        </div>
+    </div>
+
+
+<!-- PORTFOLIO -->
+
+	<div id="wrapper-container">
+    
+		<div class="container object">
+
+			<div id="main-container-image">
+                       
+					<section class="work">
+						<!--permanent card -->
+						<figure class="white">
+							<a href="#">
+								<%= image_tag "/assets/mint-poem" %>
+								<dl>
+									<!--<dt></dt>-->
+									<dd>Every person has a <strong>poem</strong>, but telling that poem can be challegeing. <strong>POEMS</strong> is a place to do just that. Here you can share your poems of triumph, pain, everyday life, relationships, poetry, and just about anything else that's on your heart, all free of judgement.</dd>	
+								</dl>
+							</a>
+              <div id="wrapper-part-info">
+            	<div class="part-info-image"><%= link_to new_poem_path do %><i style="font-size: 30px;" class="fa fa-plus-circle" title="Submit a poem"></i><% end %></div>
+              <div id="part-info"> </div>
+							</div>
+							<!--permanent card end-->
+						</figure>	
+						<% @poems.each do |poem| %>
+						<figure class="white">
+							<a href="#" style="text-decoration: none;pointer-events: none; cursor: default;">
+								<%= image_tag(poem.header_image, class: 'img-fluid') %>
+								<dl>
+									<dt><%= link_to poem.title, poem %></dt><br>
+									<dd><%= truncate(poem.content, length: 100) { link_to "Continue", poem } %></dd>	
+								</dl>
+							</a>
+              <div id="wrapper-part-info">
+              <!--<div class="part-info-image"><img src="assets/icon-psd.svg" alt="" width="28" height="28"/></div>-->
+              <div id="part-info"><%= poem.name %></div>
+							</div>
+             </figure>	
+						<% end %>
+                        
+					</section>
+                    
+				</div>	
+            	    
+			</div>
+         
+    <div id="wrapper-oldnew">
+    	<div class="oldnew">
+        	<div class="wrapper-oldnew-prev">
+            	<div id="oldnew-prev"></div>
+        	</div>
+            <div class="wrapper-oldnew-next">
+            	<div id="oldnew-next"></div>
+    		</div>
+        </div>
+	</div>     
+            
+	<div id="wrapper-thank">
+    	<div class="thank">
+        	<div class="thank-text">m<span style="letter-spacing:-5px;">i</span>nts</div>
+    	</div>
+	</div>
+
+</div>
+
+
+
+<!-- SCRIPT -->
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>-->
+    <!--<script type="text/javascript" src="js/jquery.localScroll.min.js"></script>-->
+	<!--<script type="text/javascript" src="js/fastclick.min.js"></script>-->
+	<!--<script type="text/javascript" src="js/jquery.animate-colors-min.js"></script>-->
+
+	
+<script>
+	
+
+</script>
+
+
+</body>
+
+
+</html>

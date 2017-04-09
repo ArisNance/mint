@@ -24,6 +24,12 @@
             <%= link_to 'stories', stories_path, class: "oldies object", title: "Read stories from people just like you. " %>
                 <div id="fleche-nav-3"></div>
     		</div>
+    		
+    		<div id="wrapper-title-3">
+            <!--<a href="#"><div class="oldies object">Stories</div></a>-->
+            <%= link_to 'Poetry', poems_path, class: "oldies object", title: "Read, Write, & Share Poety." %>
+            <div id="fleche-nav-3"></div>
+    		</div>
             </div>
             <div id="wrapper-bouton-icon">
                 <% if user_signed_in? %>

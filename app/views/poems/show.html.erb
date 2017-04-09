@@ -1,0 +1,173 @@
+<!--<p id="notice"><%= notice %></p>-->
+
+<head>
+ <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<!--google font-->
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+<style>
+.work {
+
+    background-size: cover;
+}
+
+#wrapper-navbar{
+    margin-top: -10px;
+}
+
+  #wrapper-copyright{
+    display:none;
+  }
+  
+.img-post {
+    width: 100%;
+}
+  
+.title-text{
+	font-family: Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 22px;
+	font-weight:600;
+	color:#686868;
+	line-height:125%;
+	height:auto;
+	width:calc(100% - 88px);
+	margin-top:8px;
+}
+
+.title-text-2{
+	font-family: Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 15px;
+	font-weight:400;
+	color:#A1A1A1;
+	line-height:125%;
+	height:auto;
+	width:calc(100% - 88px);
+	margin-top:8px;
+	display: hidden;
+}
+
+.post-content {
+    margin-top: 3%;
+}
+
+#post-content {
+    line-height: 37px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+.work{
+    padding-top: 6%;
+}
+
+.img-caption {
+    margin-top: -20%;
+}
+
+	.gallery-text{
+	    position: absolute;
+	    right: 0;
+	    top: 40%;
+	    bottom: 0; 
+	    left: 30%;
+	    width: 40%;
+	    height: 200px; 
+	    text-align: center;
+	    background-color: rgba(0, 0, 0, 0.12);
+	    opacity: 1;
+	    -webkit-transition: opacity 0.6s;
+	    -moz-transition: opacity 0.6s;
+	    transition: opacity 0.6s;
+       vertical-align:middle;
+       line-height:200px;
+       font-size: 60px;
+       color: white;
+	}
+
+	.gallery-text:hover{
+	    opacity: 1;      
+	}
+</style>
+</head>
+
+ <%= image_tag @poem.header_image, class: "img-post" %>
+ <div class="gallery-text">
+     <%= @poem.title %>
+ </div>
+ <!--dont remove-->
+ <div class="img-caption" style="font-size: 20px;"></div>
+ <!--dont remove end-->
+ 
+<div id="wrapper-container">
+    
+		<div class="container object">
+
+			<div id="main-container-image">
+                <div class="title-item">
+                	<div class="title-icon"></div>
+                    <div class="title-text"><%= @poem.title %></div>
+                    <div class="title-text-2">By: <%= @poem.name %>
+                    <%= @poem.created_at.strftime("%b %d, %Y") %></div>
+                    <br>
+                    <!--User controls-->
+                    <% if user_signed_in? %>
+                    <%= link_to edit_poem_path(@poem) do %><i style="font-size: 15px;" class="fa fa-pencil"></i><% end %> &nbsp &nbsp| &nbsp
+                    <%= link_to 'Back', poems_path %>
+                    <% end %>
+                </div>
+				<div class="work">
+				 
+					<figure class="white">
+							 <!--<img src="img/psd-4.jpg" alt="" />-->
+        <!--                 <div id="wrapper-part-info">-->
+        <!--                     <div class="part-info-image-single">-->
+                               <!--share on twitter-->
+        <!--                       <i class="fa fa-twitter" aria-hidden="true"></i>-->
+                                
+        <!--                     </div>-->
+						  <!--</div>-->
+                    </figure>	
+</div>
+<!--content start-->
+<div class="post-content">
+    <dl>
+	    <dt style="font-size: 40px; color: rgb(104, 104, 104); text-align:center;"></dt>
+			<p><%= simple_format(@poem.content, id: "post-content") %></p>
+			<br>
+			<!--source url-->
+			<%= link_to @poem.source, target: "_blank" do %><i style="font-size: 20px;" class="fa fa-wikipedia-w" title="Source"></i><% end %>
+			<br>
+			<br>
+			<% if @poem.twitter_url.blank? && @poem.facebook_url.blank? %>
+                <p>No Twitter Added</p><br>
+                <p>No Facebook Added</p>
+            <% elsif @poem.facebook_url.blank? %>
+                <p>No Facebook Added</p><br>
+            <%= link_to @poem.twitter_url, target: "_blank" do %><i style="font-size: 30px; color: #009688;" class="fa fa-twitter" title="Writer's Twitter"></i><% end %>
+            <% elsif @poem.twitter_url.blank? %>
+                <p>No Twitter Added</p><br>
+            <%= link_to @poem.facebook_url, target: "_blank" do %><i style="font-size: 30px; color: #009688;" class="fa fa-facebook" title="Writer's Facebook"></i><% end %>
+            <% else %>
+            <%= link_to @poem.facebook_url, target: "_blank" do %><i style="font-size: 30px; color: #009688;" class="fa fa-facebook" title="Writer's Facebook"></i><% end %>
+                <br>
+                <br>
+			<%= link_to @poem.twitter_url, target: "_blank" do %><i style="font-size: 30px; color: #009688;" class="fa fa-twitter" title="Writer's Twitter"></i><% end %>
+			<% end %>
+  			 </dl>
+  			  <div class="social-content">
+  			    <div class="facebook object">
+				<%= link_to "http://twitter.com/home?status=This story titled #{@poem.title} is a must read! See it here. #{story_url(@poem)}. Tell your story @ minttoday.com", target: "_blank" do %><i style="font-size: 30px; color: #009688;" class="fa fa-twitter" title="Share on Twitter"></i><% end %>
+	        </div>
+  	      </div>
+      </div>
+    </div>
+        </div>
+      </div>  
+

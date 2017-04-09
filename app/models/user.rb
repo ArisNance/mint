@@ -7,8 +7,8 @@ class User < ActiveRecord::Base
   has_many :pins
   has_many :startups
   has_many :person
+  has_many :poems
   
-  belongs_to :user
  
   
 end

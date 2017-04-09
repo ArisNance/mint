@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170405031835) do
+ActiveRecord::Schema.define(version: 20170408212935) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,6 +49,18 @@ ActiveRecord::Schema.define(version: 20170405031835) do
   end
 
   add_index "pins", ["user_id"], name: "index_pins_on_user_id", using: :btree
+
+  create_table "poems", force: :cascade do |t|
+    t.string   "name"
+    t.string   "title"
+    t.string   "content"
+    t.string   "header_image"
+    t.string   "facebook_url"
+    t.string   "twitter_url"
+    t.string   "source"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
 
   create_table "startups", force: :cascade do |t|
     t.string   "company_name"
