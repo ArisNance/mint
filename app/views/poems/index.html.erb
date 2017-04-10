@@ -79,7 +79,7 @@
 		<div class="container object">
 
 			<div id="main-container-image">
-                       
+                       <h4 class="page-head-text" id="page-head-text-hide-on-mobile">Need some inspiration? <br> Search the Picmint photo gallery. <%= link_to 'Picmint', home_photos_path, target: "_blank" %> </h4>
 					<section class="work">
 						<!--permanent card -->
 						<figure class="white">
@@ -95,7 +95,24 @@
               <div id="part-info"> </div>
 							</div>
 							<!--permanent card end-->
-						</figure>	
+						</figure>
+						
+			<!--promoted card-->
+			<figure class="white" id="page-head-text-hide-on-mobile">
+			<a href="#">
+				<%= image_tag "/assets/mint-photos" %>
+				<dl>
+				<dt><%= link_to 'Picmint', home_photos_path, target: "_blank" %></dt>
+				<br>
+				<dd>Looking for a high resolution photo for your next Poem? Well we've got you covered. Search the Mints Gallery for the right shot.</dd>	
+				</dl>
+			</a>
+			  <div id="wrapper-part-info">
+				<div class="part-info-image"><%= link_to home_photos_path, target: "blank" do %><i style="font-size: 23px;" class="fa fa-camera" title="Find a photo in our Gallery"></i><% end %></div>
+			  <div id="part-info"> </div>
+			
+			<!--promoted card end--></figure>	
+						
 						<% @poems.each do |poem| %>
 						<figure class="white">
 							<a href="#" style="text-decoration: none;pointer-events: none; cursor: default;">

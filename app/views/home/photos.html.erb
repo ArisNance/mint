@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- Behavioral Meta Data -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="http://juanvargas.net/Unsplash/css/style.css">
+    
+<style>
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+.container {
+	width: auto !important;
+	}
+}
+</style>
+  </head>
+    <body>
+
+      <div class="message_holder">
+        <div class="message">
+          <span style="margin-left: 35%;">All high-resolution photos are provided courtesy of <strong><a href="https://unsplash.com/" target="blank">Unsplash</a></strong>.</span>
+          <br>
+          <span style="margin-left: 35%;"><strong>Right-Click</strong> to copy the image address or Click to visit Unsplash.</span>
+          <!--<div id = "div_id">-->
+          <!--  #this div is html div that will render your partial-->
+            
+          <!--</div>-->
+          <div class="dropdown">
+            <button class="dropbtn">FILTER BY</button>
+            <div class="dropdown-content">
+              <a href="latest">Latest</a>
+              <a href="popular">Popular</a>
+              <a href="oldest">Oldest</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="photos">
+        <div id="unsplash" >
+        </div>
+        <div id="more">
+          <a class="more"><span>...</span></a>
+          </div> 
+      </div>
+    <script src='http://juanvargas.net/Unsplash/js/jquery.min.js'></script>
+    <script src='http://juanvargas.net/Unsplash/js/jquery.masonry.js'></script>
+    <script src='http://juanvargas.net/Unsplash/js/imagesloaded.pkgd.js'></script>
+    <script src="http://juanvargas.net/Unsplash/js/api.js"></script>
+    <script>
+      $('#unsplash').unsplash({
+        client_id:'ac2440143679fe6cabdec3a7c05d19336e6985f38a5808992db62cac654e7a7b',
+        limit:20,
+        columns:2,
+        width:1917
+      });
+    </script>
+  </body>
+</html>

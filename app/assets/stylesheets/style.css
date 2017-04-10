@@ -623,6 +623,61 @@ form {
 	margin-top:50px;
 }
 
+/*photo gallery*/
+#photos {
+	left: 0%;
+	margin-top: 13%;
+}
+
+
+.page-head-text {
+	font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+#unsplash .item p {
+	margin-top: -40%;
+    margin-left: 28%;
+    position: absolute;
+    font-size: 20px !important;
+    color: #f0f0f0 !important;
+    font-weight: 900 !important;
+}
+
+.more:hover {
+    background: transparent !important;
+}
+
+#unsplash .item p:hover{
+	background: rgba(0, 0, 0, 0.21) ;
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+#photos {
+	column-count: 1;
+	
+	}
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+.link {
+	height: 220px !important;
+	}
+}
+
+.item .link {
+	background: none !important;
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+.message_holder {
+	display: none;
+	}
+}
+
+
 .thank,.oldnew{
 	position:relative;
 	width:1200px;
@@ -1148,6 +1203,13 @@ textarea.form-control {
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
 .title-text {
 	margin-left: 30%;
+	
+	}
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+#page-head-text-hide-on-mobile {
+	display: none;
 	
 	}
 }

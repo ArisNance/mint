@@ -28,6 +28,18 @@
     <%= f.label :title %><br>
     <%= f.text_field :title, placeholder: 'The Journey', class: "form-control" %><br>
     
+    <!--Picmint Gallery-->
+    <div id="page-head-text-hide-on-mobile">
+    <hr style="border-top: 1px solid #00d49b;">
+    <%= link_to home_photos_path, target: "_blank" do %><i style="font-size: 25px;" class="fa fa-camera" title="Picmint Gallery"></i><% end %>
+    <span style="margin-left: 16%;"><strong>Click</strong> to explore images in the Picmint gallery.</span>
+    <br>
+    <br>
+    <hr style="border-top: 1px solid #00d49b;">
+    <br>
+    </div>
+   <!--end-->
+    
     <%= f.label :image %><br>
     <%= f.text_field :header_image, placeholder: 'Recommended  800 x 500 | http://www.google.com/url_to_image.png', class: "form-control" %><br>
     

@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   devise_scope :user do get 'users/sign_out' => "devise/sessions#destroy"
   end
   
-  get 'home/about'
+  get 'home/photos'
   get 'home/index'
   
   # get 'home/index'
