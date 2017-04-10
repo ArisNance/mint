@@ -1,7 +1,7 @@
 class StoriesController < ApplicationController
   before_action :set_story, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
-  before_action :current_user, only: [:edit, :update, :destroy]
+  before_action :correct_user, only: [:edit, :update, :destroy]
 
   # GET /stories
   # GET /stories.json
@@ -16,7 +16,7 @@ class StoriesController < ApplicationController
 
   # GET /stories/new
   def new
-    @story = Story.new
+    @story = current_user.stories.build
   end
   
 
@@ -27,7 +27,7 @@ class StoriesController < ApplicationController
   # POST /stories
   # POST /stories.json
   def create
-    @story = Story.new(story_params)
+    @story = current_user.stories.build(story_params)
 
     respond_to do |format|
       if @story.save
@@ -76,7 +76,7 @@ class StoriesController < ApplicationController
     end
 end
 
-def current_user
-  @story = current_user.story.find_by(id: params[:id])
-  redirect_to stories_path, notice: "Not authorized to edit this post" if @story.nil?
+def correct_user
+  @story = current_user.stories.find_by(id: params[:id])
+  redirect_to stories_path, notice: "Not authorized to edit this story" if @story.nil?
 end

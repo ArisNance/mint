@@ -1,7 +1,7 @@
 class PeopleController < ApplicationController
   before_action :set_person, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
-  before_action :current_user, only: [:edit, :update, :destroy]
+  before_action :correct_user, only: [:edit, :update, :destroy]
 
   # GET /people
   # GET /people.json
@@ -16,7 +16,7 @@ class PeopleController < ApplicationController
 
   # GET /people/new
   def new
-    @person = Person.new
+    @person = current_user.person.build
   end
 
   # GET /people/1/edit
@@ -26,7 +26,7 @@ class PeopleController < ApplicationController
   # POST /people
   # POST /people.json
   def create
-    @person = Person.new(person_params)
+    @person = current_user.person.build(person_params)
 
     respond_to do |format|
       if @person.save
@@ -76,7 +76,7 @@ class PeopleController < ApplicationController
 end
 
 
-def current_user
+def correct_user
   @person = current_user.person.find_by(id: params[:id])
   redirect_to people_path, notice: "Not authorized to edit this post" if @person.nil?
 end

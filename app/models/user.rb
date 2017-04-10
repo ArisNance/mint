@@ -8,6 +8,7 @@ class User < ActiveRecord::Base
   has_many :startups
   has_many :person
   has_many :poems
+  has_many :stories
   
  
   

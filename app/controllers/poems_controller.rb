@@ -1,7 +1,7 @@
 class PoemsController < ApplicationController
   before_action :set_poem, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
-  before_action :current_user, only: [:edit, :update, :destroy]
+  before_action :correct_user, only: [:edit, :update, :destroy]
 
   # GET /poems
   # GET /poems.json
@@ -16,9 +16,8 @@ class PoemsController < ApplicationController
 
   # GET /poems/new
   def new
-    @poem = Poem.new
+    @poem = current_user.poems.build
   end
-  
 
   # GET /poems/1/edit
   def edit
@@ -27,7 +26,7 @@ class PoemsController < ApplicationController
   # POST /poems
   # POST /poems.json
   def create
-    @poem = Poem.new(poem_params)
+    @poem = current_user.poems.build(poem_params)
 
     respond_to do |format|
       if @poem.save
@@ -45,7 +44,7 @@ class PoemsController < ApplicationController
   def update
     respond_to do |format|
       if @poem.update(poem_params)
-        format.html { redirect_to @poem, notice: 'Poem was successfully updated.' }
+        format.html { redirect_to @poem, notice: 'poem was successfully updated.' }
         format.json { render :show, status: :ok, location: @poem }
       else
         format.html { render :edit }
@@ -76,7 +75,7 @@ class PoemsController < ApplicationController
     end
 end
 
-def current_user
-  @poem = current_user.poem.find_by(id: params[:id])
-  redirect_to poems_path, notice: "Not authorized to edit this post" if @poem.nil?
+def correct_user
+  @poem = current_user.poems.find_by(id: params[:id])
+  redirect_to poems_path, notice: "Not authorized to edit this poem" if @poem.nil?
 end

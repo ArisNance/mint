@@ -1,7 +1,7 @@
 class StartupsController < ApplicationController
   before_action :set_startup, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
-  before_action :current_user, only: [:edit, :update, :destroy]
+  before_action :correct_user, only: [:edit, :update, :destroy]
 
   # GET /startups
   # GET /startups.json
@@ -16,7 +16,7 @@ class StartupsController < ApplicationController
 
   # GET /startups/new
   def new
-    @startup = Startup.new
+    @startup = current_user.startups.build
   end
 
   # GET /startups/1/edit
@@ -26,7 +26,7 @@ class StartupsController < ApplicationController
   # POST /startups
   # POST /startups.json
   def create
-    @startup = Startup.new(startup_params)
+    @startup = current_user.startups.build(startup_params)
 
     respond_to do |format|
       if @startup.save
@@ -75,7 +75,7 @@ class StartupsController < ApplicationController
     end
 end
 
-def current_user
-  @startup = current_user.startup.find_by(id: params[:id])
-  redirect_to startups_path, notice: "Not authorized to edit this post" if @startup.nil?
+def correct_user
+  @startup = current_user.startups.find_by(id: params[:id])
+  redirect_to startups_path, notice: "Not authorized to edit this company" if @startup.nil?
 end
