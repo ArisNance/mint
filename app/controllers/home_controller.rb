@@ -3,6 +3,7 @@ class HomeController < ApplicationController
   
   def index
     @pins = Pin.all
+    @pins = Pin.paginate(:page => params[:page], :per_page => 1)
   end
   
   def photos

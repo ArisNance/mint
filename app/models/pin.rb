@@ -3,4 +3,5 @@ class Pin < ActiveRecord::Base
     
     validates_formatting_of :image_url, using: :url
     validates_formatting_of :wiki_url, using: :url
+    
 end

@@ -594,6 +594,33 @@ form {
     -o-transition: all 0.2s ease-in-out;
 }
 
+
+
+
+.gallery-text{
+	    position: absolute;
+	    right: 0;
+	    top: 40%;
+	    bottom: 0; 
+	    left: 30%;
+	    width: 40%;
+	    height: 200px; 
+	    text-align: center;
+	    background-color: rgba(0, 0, 0, 0.12);
+	    opacity: 1;
+	    -webkit-transition: opacity 0.6s;
+	    -moz-transition: opacity 0.6s;
+	    transition: opacity 0.6s;
+       vertical-align:middle;
+       line-height:200px;
+       font-size: 60px;
+       color: white;
+	}
+
+	.gallery-text:hover{
+	    opacity: 1;      
+	}
+
 .premium-ressource a,.themes a,.psd a,.photo a,.font a,.ai a{color:#999;}
 
 .premium-ressource a:hover{color:#CCC;}

@@ -99,7 +99,7 @@
 						<% @startups.each do |startup| %>
 						<figure class="white">
 							<a href="#" style="text-decoration: none;pointer-events: none; cursor: default;">
-								<%= image_tag(startup.option_url, class: 'img-fluid') %>
+								<%= image_tag(startup.option_url) %>
 								<dl>
 									<dt><%= link_to startup.company_name, startup %></dt>
 									<br>
