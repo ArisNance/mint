@@ -7,11 +7,11 @@
             	<div id="fleche-nav-1"></div>
     		</div>
             
-            <div id="wrapper-title-2">
+      <!--      <div id="wrapper-title-2">-->
             <!--<a href="#"><div class="recent object">Leaders Today</div></a>-->
-            <%= link_to 'mints', people_path, class: "top-rated object", title: "See who's open to networking." %>
-                <div id="fleche-nav-2"></div>
-    		</div>
+      <!--      <%= link_to 'mints', people_path, class: "top-rated object", title: "See who's open to networking." %>-->
+      <!--          <div id="fleche-nav-2"></div>-->
+    		<!--</div>-->
             
             <div id="wrapper-title-3">
             <!--<a href="#"><div class="oldies object">StartUps</div></a>-->
@@ -21,7 +21,7 @@
     		
     		  <div id="wrapper-title-3">
             <!--<a href="#"><div class="oldies object">Stories</div></a>-->
-            <%= link_to 'stories', stories_path, class: "oldies object", title: "Read stories from people just like you. " %>
+            <%= link_to 'literature', stories_path, class: "oldies object", title: "Read writings from people just like you. " %>
                 <div id="fleche-nav-3"></div>
     		</div>
     		
@@ -30,6 +30,12 @@
             <%= link_to 'Poetry', poems_path, class: "oldies object", title: "Read, Write, & Share Poety." %>
             <div id="fleche-nav-3"></div>
     		</div>
+    		<div id="wrapper-title-3">
+            <!--<a href="#"><div class="oldies object">Stories</div></a>-->
+            <%= link_to 'Events', poems_path, class: "oldies object events", title: "Find evenets nearby. Post now for free!" , style: "pointer-events: none; color: #eee;" %>
+            <div id="fleche-nav-3"></div>
+    		</div>
+    		
             </div>
             <div id="wrapper-bouton-icon">
                 <% if user_signed_in? %>
