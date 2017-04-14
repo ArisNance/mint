@@ -76,6 +76,6 @@ class EventsController < ApplicationController
 end
 
 def correct_user
-  @events = current_user.events.find_by(id: params[:id])
-  redirect_to events_path, notice: "Not authorized to edit this event" if @events.nil?
+  @event = current_user.events.find_by(id: params[:id])
+  redirect_to events_path, notice: "Not authorized to edit this event" if @event.nil?
 end
