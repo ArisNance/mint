@@ -1,0 +1,208 @@
+<!--<p id="notice"><%= notice %></p>-->
+<head>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<!--google font-->
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+<style>
+body{
+  font-family: monospace;
+}
+
+#post-content {
+    line-height: 37px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: 'Playfair Display', serif;
+    margin-left: 0% !important;
+    margin-top: 10%;
+    font-weight: 600;
+}
+
+#main-container-footer{
+  display: none;
+}
+
+#main-container-image {
+margin-top: -30%;
+position: fixed;
+width: 60%;
+}
+
+.object {
+  opacity: ;
+}
+
+.work {
+ background-size: cover;
+}
+
+#wrapper-navbar{
+    margin-top: -10px;
+}
+
+  #wrapper-copyright{
+    display:none;
+  }
+  
+.img-post {
+  width: 100%;
+  -webkit-filter: blur(6px); /* Safari */
+  filter: blur(6px);
+}
+  
+.title-text{
+	font-family: Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 22px;
+	font-weight:600;
+	color:#686868;
+	line-height:125%;
+	height:auto;
+	width:calc(100% - 88px);
+	margin-top:8px;
+}
+
+.title-text-2{
+	font-family: Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 15px;
+	font-weight:400;
+	color:#A1A1A1;
+	line-height:125%;
+	height:auto;
+	width:calc(100% - 88px);
+	margin-top:8px;
+	display: hidden;
+}
+
+.post-content {
+    margin-top: 3%;
+}
+
+
+
+.work{
+    padding-top: 6%;
+}
+
+.img-caption {
+    margin-top: -20%;
+}
+
+.mobile-text{
+	    position: absolute;
+	    right: 0;
+	    top: 20%;
+	    bottom: 0; 
+	    left: 27%;
+	    width: 45%;
+	    height: 200px; 
+	    text-align: center;
+	    background-color: rgba(0, 150, 136, 0.87);
+	    opacity: 1;
+	    -webkit-transition: opacity 0.6s;
+	    -moz-transition: opacity 0.6s;
+	    transition: opacity 0.6s;
+       vertical-align:middle;
+       line-height:200px;
+       font-size: 35px;
+       color: #f4f4f4;
+       word-break: break-all;
+	}
+	
+@media screen and (min-device-width : 375px) and (max-device-width : 667px) {
+.mobile-text {
+top: 50%;
+left: 0%;
+width: 100%;
+height: 198px;
+display: initial;
+background-color: rgba(0, 150, 136, 0.24);
+  }
+}
+
+@media screen and (min-device-width : 375px) and (max-device-width : 667px) {
+.time {
+  font-size: 15px;
+  }
+}
+
+@media screen and (min-device-width : 375px) and (max-device-width : 667px) {
+.time {
+  background-color: #2b2b2b !important;
+  }
+}
+
+@media screen and (min-device-width : 375px) and (max-device-width : 667px) {
+#post-content {
+  font-weight: 600;
+  width: 90%;
+  word-break: break-word;
+  margin-left: 5% !important;
+  padding-bottom: 20%;
+  }
+}
+
+@media screen and (min-device-width : 375px) and (max-device-width : 667px) {
+#image-text {
+  font-size: 20px;
+  }
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+	.mobile-text {
+    font-size: 25px !important;
+	}
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+	.time {
+    font-size: 20px !important;
+	}
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+.img-post {
+    height: 1320px;
+	}
+}
+</style>
+</head>
+
+ <%= image_tag @events.event_image, class: "img-post" %>
+ <div class="mobile-text">
+  
+     <div id="image-text"><%= @events.name %></div>
+     <!--start time-->
+     <div class="time">
+     <div id="start_time"><%= @events.start_time.strftime("%A, %d %b %Y %l:%M %p") %></div>
+     <!--end time-->
+     <div id="end_time"><%= @events.end_time.strftime("%A, %d %b %Y %l:%M %p") %></div>
+     <p><%= simple_format(@events.summary, id: "post-content") %>
+     <%= link_to edit_event_path, id: "bouton-psd" do %><i style="font-size: 30px; color: #009688" class="fa fa-pencil" title="Edit Event"></i><% end %>
+     <%= link_to @events.web_url, target: "_blank", id: "bouton-psd" do %><i style="font-size: 30px; color: #009688" class="fa fa-rss" title="Website"></i><% end %>
+     </p>
+
+     </div>
+ <div class="post-social">
+        <!--share on twitter-->
+   <%= link_to "http://twitter.com/home?status=Check out #{@events.name}, I'm definitely going! #{events_url(@events)} Add your free events | minttoday.com", target: "_blank" do %><i style="font-size: 30px; color: #009688;" class="fa fa-twitter" title="Share on Twitter"></i><% end %>
+ </div>
+ </div>
+
+ <!--dont remove-->
+ <div class="img-caption" style="font-size: 20px;"></div>
+ <!--dont remove end-->
+ 
+<div id="wrapper-container">
+    
+		<div class="container object">
+
+
+        </div>
+      </div>  
+

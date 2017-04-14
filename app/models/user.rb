@@ -9,6 +9,7 @@ class User < ActiveRecord::Base
   has_many :person
   has_many :poems
   has_many :stories
+  has_many :events
   
  
   

@@ -1,0 +1,165 @@
+
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<style>
+#wrapper-navbar{
+    margin-top: -10px;
+}
+
+	.img-fluid {
+	width: 440px;
+	height: 330px;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<a name="ancre"></a>
+
+<!-- CACHE -->
+<div class="cache"></div>
+
+
+<!-- NAVBAR -->
+
+<!--moved to partial-->
+
+<!-- FILTER -->	
+
+	<div id="main-container-menu" class="object">
+    	<div class="container-menu">
+        	
+            <div id="main-cross">
+            	<div id="cross-menu"></div>
+            </div>
+            
+            <div id="main-small-logo">
+            	<div class="small-logo"></div>
+            </div>
+            
+            <div id="main-premium-ressource">
+                <div class="premium-ressource"><a href="#">Premium resources</a></div>
+            </div>
+            
+            <div id="main-themes">
+                <div class="themes"><a href="#">Latest themes</a></div>
+            </div>
+            
+            <div id="main-psd">
+                <div class="psd"><a href="#">PSD goodies</a></div>
+            </div>
+                
+            <div id="main-ai">
+                <div class="ai"><a href="#">Illustrator freebies</a></div>
+            </div>
+            
+            <div id="main-font">
+                <div class="font"><a href="#">Free fonts</a></div>
+            </div>
+            
+            <div id="main-photo">
+                <div class="photo"><a href="#">Free stock photos</a></div>
+            </div>
+            
+        </div>
+    </div>
+
+
+<!-- PORTFOLIO -->
+
+	<div id="wrapper-container">
+    
+		<div class="container object">
+
+<div id="main-container-image">
+	<br>
+
+	<h4 class="page-head-text" id="page-head-text-hide-on-mobile">Need some inspiration? <br> Search the mints photo gallery. <%= link_to 'mints', home_photos_path, target: "_blank" %> </h4>
+	<section class="work">
+		<!--permanent card -->
+		<figure class="white">
+			<a href="#">
+				<%= image_tag "/assets/ui-1.jpg" %>
+				<dl>
+					<!--<dt></dt>-->
+					<dd>Have something going on in the <strong>community?</strong> You can now post events. <strong>FREE</strong> of course. Share your next networking event or fundraiser. Its up to you.</dd>	
+				</dl>
+			</a>
+  <div id="wrapper-part-info">
+	<div class="part-info-image"><%= link_to new_event_path do %><i style="font-size: 30px;" class="fa fa-plus-circle" title="Submit a event"></i><% end %></div>
+  <div id="part-info"> </div>
+				</div>
+			</figure>	
+			<!--permanent card end-->
+			
+<!--promoted card-->
+
+
+
+<!--promoted card end-->	
+
+	<% @events.each do |event| %>
+	<figure class="white">
+		<a href="#" style="text-decoration: none;pointer-events: none; cursor: default;">
+		<%= image_tag event.event_image %>
+			<dl>
+				<dt><%= link_to event.name, event %></dt>
+				<br>
+				<dd><%= truncate(event.summary, length: 50) { link_to "Continue", event } %></dd>	
+			</dl>
+		</a>
+      <div id="wrapper-part-info">
+      <!--<div class="part-info-image"><img src="assets/icon-psd.svg" alt="" width="28" height="28"/></div>-->
+      <div id="part-info"><%= event.name %></div>
+					</div>
+     </figure>	
+				<% end %>
+                
+			</section>
+            
+		</div>	
+    	    
+	</div>
+ 
+    <div id="wrapper-oldnew">
+    	<div class="oldnew">
+        	<div class="wrapper-oldnew-prev">
+            	<div id="oldnew-prev"></div>
+        	</div>
+            <div class="wrapper-oldnew-next">
+            	<div id="oldnew-next"></div>
+    		</div>
+        </div>
+	</div>     
+            
+	<div id="wrapper-thank">
+    	<div class="thank">
+        	<div class="thank-text">E<span style="letter-spacing:-5px;">ve</span>nts</div>
+    	</div>
+	</div>
+
+</div>
+
+
+
+<!-- SCRIPT -->
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  
+	
+<script>
+	
+
+</script>
+
+
+</body>
+
+
+</html>

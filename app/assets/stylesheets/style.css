@@ -409,6 +409,14 @@ body,html{
 
  
 /*FORMS*/
+.new_event {
+	margin-left: 35%
+}
+
+.edit_event {
+	margin-left: 35%
+}
+
 form {
 	padding-top: 15%;
 }
@@ -594,7 +602,17 @@ form {
     -o-transition: all 0.2s ease-in-out;
 }
 
+#start_time {
+	background: rgba(0, 150, 136, 0.56);
+}
 
+#end_time {
+	background: rgba(0, 150, 136, 0.56);	
+}
+
+.time {
+	font-size: 30px;
+}
 
 
 .gallery-text{
@@ -618,6 +636,30 @@ form {
 	}
 
 	.gallery-text:hover{
+	    opacity: 1;      
+	}
+	
+	.gallery-summary{
+	    position: absolute;
+	    right: 0;
+	    top: 90%;
+	    bottom: 0; 
+	    left: 30%;
+	    width: 40%;
+	    height: 200px; 
+	    text-align: center;
+	    /*background-color: rgba(0, 0, 0, 0.12);*/
+	    opacity: 1;
+	    -webkit-transition: opacity 0.6s;
+	    -moz-transition: opacity 0.6s;
+	    transition: opacity 0.6s;
+       vertical-align:middle;
+       line-height:200px;
+       font-size: 30px;
+       color: white;
+	}
+
+	.gallery-summary:hover{
 	    opacity: 1;      
 	}
 

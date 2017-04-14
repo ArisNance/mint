@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :events
   resources :poems
   resources :galleries
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'

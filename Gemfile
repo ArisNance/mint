@@ -7,6 +7,7 @@ gem 'rails', '4.2.5'
 gem 'google-analytics-rails'
 gem 'will_paginate', '~> 3.1.0'
 gem 'bootstrap-will_paginate'
+gem "simple_calendar", "~> 2.0"
 
  
 # Use sqlite3 as the database for Active Record
