@@ -173,24 +173,24 @@ background-color: rgba(0, 150, 136, 0.24);
 </style>
 </head>
 
- <%= image_tag @events.event_image, class: "img-post" %>
+ <%= image_tag @event.event_image, class: "img-post" %>
  <div class="mobile-text">
   
-     <div id="image-text"><%= @events.name %></div>
+     <div id="image-text"><%= @event.name %></div>
      <!--start time-->
      <div class="time">
-     <div id="start_time"><%= @events.start_time.strftime("%A, %d %b %Y %l:%M %p") %></div>
+     <div id="start_time"><%= @event.start_time.strftime("%A, %d %b %Y %l:%M %p") %></div>
      <!--end time-->
-     <div id="end_time"><%= @events.end_time.strftime("%A, %d %b %Y %l:%M %p") %></div>
-     <p><%= simple_format(@events.summary, id: "post-content") %>
+     <div id="end_time"><%= @event.end_time.strftime("%A, %d %b %Y %l:%M %p") %></div>
+     <p><%= simple_format(@event.summary, id: "post-content") %>
      <%= link_to edit_event_path, id: "bouton-psd" do %><i style="font-size: 30px; color: #009688" class="fa fa-pencil" title="Edit Event"></i><% end %>
-     <%= link_to @events.web_url, target: "_blank", id: "bouton-psd" do %><i style="font-size: 30px; color: #009688" class="fa fa-rss" title="Website"></i><% end %>
+     <%= link_to @event.web_url, target: "_blank", id: "bouton-psd" do %><i style="font-size: 30px; color: #009688" class="fa fa-rss" title="Website"></i><% end %>
      </p>
 
      </div>
  <div class="post-social">
         <!--share on twitter-->
-   <%= link_to "http://twitter.com/home?status=Check out #{@events.name}, I'm definitely going! #{events_url(@events)} Add your free events | minttoday.com", target: "_blank" do %><i style="font-size: 30px; color: #009688;" class="fa fa-twitter" title="Share on Twitter"></i><% end %>
+   <%= link_to "http://twitter.com/home?status=Check out #{@event.name}, I'm definitely going! #{events_url(@event)} Add your free events | minttoday.com", target: "_blank" do %><i style="font-size: 30px; color: #009688;" class="fa fa-twitter" title="Share on Twitter"></i><% end %>
  </div>
  </div>
 

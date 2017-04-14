@@ -6,7 +6,7 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-    @events = Event.all
+    @event = Event.all
   end
 
   # GET /events/1
@@ -16,7 +16,7 @@ class EventsController < ApplicationController
 
   # GET /events/new
   def new
-    @events = current_user.events.build
+    @event = current_user.events.build
   end
 
   # GET /events/1/edit
@@ -26,15 +26,15 @@ class EventsController < ApplicationController
   # POST /events
   # POST /events.json
   def create
-    @events = current_user.events.build(event_params)
+    @event = current_user.events.build(event_params)
 
     respond_to do |format|
-      if @events.save
-        format.html { redirect_to @events, notice: 'event was successfully created.' }
-        format.json { render :show, status: :created, location: @events }
+      if @event.save
+        format.html { redirect_to @event, notice: 'event was successfully created.' }
+        format.json { render :show, status: :created, location: @event }
       else
         format.html { render :new }
-        format.json { render json: @events.errors, status: :unprocessable_entity }
+        format.json { render json: @event.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -43,12 +43,12 @@ class EventsController < ApplicationController
   # PATCH/PUT /events/1.json
   def update
     respond_to do |format|
-      if @events.update(event_params)
-        format.html { redirect_to @events, notice: 'event was successfully updated.' }
-        format.json { render :show, status: :ok, location: @events }
+      if @event.update(event_params)
+        format.html { redirect_to @event, notice: 'event was successfully updated.' }
+        format.json { render :show, status: :ok, location: @event }
       else
         format.html { render :edit }
-        format.json { render json: @events.errors, status: :unprocessable_entity }
+        format.json { render json: @event.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -56,7 +56,7 @@ class EventsController < ApplicationController
   # DELETE /events/1
   # DELETE /events/1.json
   def destroy
-    @events.destroy
+    @event.destroy
     respond_to do |format|
       format.html { redirect_to events_url, notice: 'event was successfully destroyed.' }
       format.json { head :no_content }
@@ -66,7 +66,7 @@ class EventsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_event
-      @events = Event.find(params[:id])
+      @event = Event.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
