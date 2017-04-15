@@ -18,6 +18,14 @@
     <%= stylesheet_link_tag 'bootstrap.min.css', media: 'all', 'data-turbolinks-track' => true %>
     <!-- Style CSS -->
     <%= stylesheet_link_tag 'eventstyle', media: 'all', 'data-turbolinks-track' => true %>
+    
+    <!-- jquery -->
+    <%= javascript_include_tag 'jquery-2.1.4.min.js', 'data-turbolinks-track' => true %>
+    <!-- Bootstrap -->
+    <%= javascript_include_tag 'bootstrap.min.js', 'data-turbolinks-track' => true %>
+    
+    <!-- Plugin JavaScript -->
+    <%= javascript_include_tag 'jquery.easing.min.js', 'data-turbolinks-track' => true %>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -192,15 +200,13 @@
 
 </div>
 <!-- #main-wrapper -->
+<script>
+    $( document ).ready(function() {
+    console.log( "ready!" );
+});
 
+</script>
 
-<!-- jquery -->
-<%= javascript_include_tag 'jquery-2.1.4.min.js', 'data-turbolinks-track' => true %>
-<!-- Bootstrap -->
-<%= javascript_include_tag 'bootstrap.min.js', 'data-turbolinks-track' => true %>
-
-<!-- Plugin JavaScript -->
-<%= javascript_include_tag 'jquery.easing.min.js', 'data-turbolinks-track' => true %>
 
 <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
 <script src="https://maps.googleapis.com/maps/api/js"></script>
