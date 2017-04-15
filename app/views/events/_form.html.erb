@@ -21,19 +21,57 @@
   <% end %>
 
   <div class="form-group">
-    <%= f.label :name %><br>
+    <%= f.label :Organizer_or_Organization %><br>
+    <%= f.text_field :organizer, placeholder: 'Latino Community Fund', class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :Event_name %><br>
     <%= f.text_field :name, placeholder: 'Event Name', class: "form-control" %>
+  </div>
+  
+  <div class="form-group">
+    <%= f.label :city %><br>
+    <%= f.text_field :city, placeholder: 'Seattle', class: "form-control" %>
+  </div>
+  
+  <div class="form-group">
+    <%= f.label :Venue %><br>
+    <%= f.text_field :location, placeholder: 'Event Venue e.g Impact Hub', class: "form-control" %>
+  </div>
+  
+  <!--mints Gallery-->
+    <div id="page-head-text-hide-on-mobile">
+    <!--<hr style="border-top: 1px solid #00d49b;">-->
+    <%= link_to home_photos_path, target: "_blank" do %><i style="font-size: 25px;" class="fa fa-camera" title="mints Gallery"></i><% end %>
+    <span style="margin-left: 16%;"><strong>Click</strong> to explore images in the mints gallery.</span>
+    <br>
+    <br>
+    <!--<hr style="border-top: 1px solid #00d49b;">-->
+    <br>
+    </div>
+   <!--end-->
+  
+  <div class="form-group">
+    <%= f.label :Event_image %><br>
+    <%= f.text_field :event_image, placeholder: 'Image Url | Recommended  800 x 500', class: "form-control" %>
   </div>
   
   <div class="form-group">
     <%= f.label :summary %><br>
     <%= f.text_area :summary, placeholder: 'Share details about your event', class: "form-control", :maxlength => 684, :size => 40 %>
   </div>
-  
   <div class="form-group">
-    <%= f.label :Event_image %><br>
-    <%= f.text_field :event_image, placeholder: 'Image Url | Recommended  800 x 500', class: "form-control" %>
+    <%= f.label :Short_description %><br>
+    <%= f.text_area :description, placeholder: 'Provide a short description of the event | 187 Characters Max', :maxlength => 187, class: "form-control" %>
   </div>
+    <br>
+    <br>
+    <%= f.label :Is_the_event_free_?, required: true %><br>
+    <%= f.check_box :free, {}, true %> <%= f.label :free, "Free" %><br> 
+    <%= f.check_box :free, {}, false %> <%= f.label :no, "Ticket Required" %><br>
+    <br>
+    <br>
   
   <div class="form-group">
     <%= f.label :link %><br>

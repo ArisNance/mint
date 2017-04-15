@@ -1,210 +1,212 @@
-<!--<p id="notice"><%= notice %></p>-->
+<!DOCTYPE html>
+<html>
 <head>
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<!--google font-->
-<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title><%= @event.name %></title>
 
+    <!-- favicon -->
+    <link href="favicon.png" rel=icon>
+
+    <!-- web-fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,500' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <%= stylesheet_link_tag 'bootstrap.min.css', media: 'all', 'data-turbolinks-track' => true %>
+    <!-- Style CSS -->
+    <%= stylesheet_link_tag 'eventstyle', media: 'all', 'data-turbolinks-track' => true %>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 <style>
-body{
-  font-family: monospace;
-}
-
 #post-content {
     line-height: 37px;
     font-size: 20px;
     letter-spacing: 1px;
     font-family: 'Playfair Display', serif;
     margin-left: 0% !important;
-    margin-top: 10%;
+    margin-top: -4%;
     font-weight: 600;
-    background: rgba(0, 0, 0, 0.32);
+}
+#wrapper-navbar {
+    display: none;
+}
+#wrapper-header {
+    display: none;
 }
 
 #main-container-footer{
-  display: none;
-}
-
-#main-container-image {
-margin-top: -30%;
-position: fixed;
-width: 60%;
-}
-
-.object {
-  opacity: ;
-}
-
-.work {
- background-size: cover;
-}
-
-#wrapper-navbar{
-    margin-top: -10px;
-}
-
-  #wrapper-copyright{
     display:none;
-  }
-  
-.img-post {
-  width: 100%;
-  -webkit-filter: blur(6px); /* Safari */
-  filter: blur(6px);
-}
-  
-.title-text{
-	font-family: Helvetica, sans-serif;
-	-webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 22px;
-	font-weight:600;
-	color:#686868;
-	line-height:125%;
-	height:auto;
-	width:calc(100% - 88px);
-	margin-top:8px;
 }
 
-.title-text-2{
-	font-family: Helvetica, sans-serif;
-	-webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: 15px;
-	font-weight:400;
-	color:#A1A1A1;
-	line-height:125%;
-	height:auto;
-	width:calc(100% - 88px);
-	margin-top:8px;
-	display: hidden;
+.main-menu .navbar-right {
+    display: none !important;
 }
 
-.post-content {
-    margin-top: 3%;
+.container {
+    position: initial;
 }
 
-
-
-.work{
-    padding-top: 6%;
+.sticky-nav {
+    background: transparent !important;
 }
 
-.img-caption {
-    margin-top: -20%;
+.navbar {
+    position: initial;
 }
 
-.mobile-text{
-	    position: absolute;
-	    right: 0;
-	    top: 20%;
-	    bottom: 0; 
-	    left: 27%;
-	    width: 45%;
-	    height: 200px; 
-	    text-align: center;
-	    background-color: rgba(0, 150, 136, 0.87);
-	    opacity: 1;
-	    -webkit-transition: opacity 0.6s;
-	    -moz-transition: opacity 0.6s;
-	    transition: opacity 0.6s;
-       vertical-align:middle;
-       line-height:200px;
-       font-size: 25px;
-       color: #f4f4f4;
-       word-break: break-all;
-	}
-	
-@media screen and (min-device-width : 375px) and (max-device-width : 667px) {
-.mobile-text {
-top: 50%;
-left: 0%;
-width: 100%;
-height: 198px;
-display: initial;
-background-color: rgba(0, 150, 136, 0.24);
-  }
-}
-
-@media screen and (min-device-width : 375px) and (max-device-width : 667px) {
-.time {
-  font-size: 15px;
-  }
-}
-
-@media screen and (min-device-width : 375px) and (max-device-width : 667px) {
-.time {
-  background-color: #2b2b2b !important;
-  }
-}
-
-@media screen and (min-device-width : 375px) and (max-device-width : 667px) {
-#post-content {
-  font-weight: 600;
-  width: 90%;
-  word-break: break-word;
-  margin-left: 5% !important;
-  padding-bottom: 20%;
-  background: transparent !important;
-  }
-}
-
-@media screen and (min-device-width : 375px) and (max-device-width : 667px) {
-#image-text {
-  font-size: 20px;
-  }
-}
-
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-	.mobile-text {
-    font-size: 25px !important;
-	}
-}
-
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-	.time {
-    font-size: 20px !important;
-	}
-}
-
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-.img-post {
-    height: 1320px;
-	}
-}
 </style>
 </head>
+<body id="page-top" data-spy="scroll" data-target=".navbar">
+<div id="main-wrapper">
+    <!-- Page Preloader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="status-mes"></div>
+        </div>
+    </div>
 
- <%= image_tag @event.event_image, class: "img-post" %>
- <div class="mobile-text">
-  
-     <div id="image-text"><%= @event.name %></div>
-     <!--start time-->
-     <div class="time">
-     <div id="start_time"><%= @event.start_time.strftime("%A, %d %b %Y %l:%M %p") %></div>
-     <!--end time-->
-     <div id="end_time"><%= @event.end_time.strftime("%A, %d %b %Y %l:%M %p") %></div>
-     <p><%= simple_format(@event.summary, id: "post-content") %>
-     <%= link_to edit_event_path, id: "bouton-psd" do %><i style="font-size: 30px; color: #009688" class="fa fa-pencil" title="Edit Event"></i><% end %>
-     <%= link_to @event.web_url, target: "_blank", id: "bouton-psd" do %><i style="font-size: 30px; color: #009688" class="fa fa-rss" title="Website"></i><% end %>
-     </p>
+    <header class="header">
+        <!-- Navigation -->
+        <nav class="navbar main-menu" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top"><%= link_to image_tag("mints-logo.png"), root_path %></a>
+                </div>
 
-     </div>
- <div class="post-social">
-        <!--share on twitter-->
-   <%= link_to "http://twitter.com/home?status=Check out #{@event.name}, I'm definitely going! #{events_url(@event)} Add your free events | minttoday.com", target: "_blank" do %><i style="font-size: 30px; color: #009688;" class="fa fa-twitter" title="Share on Twitter"></i><% end %>
- </div>
- </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden"><a href="#page-top"></a></li>
+                        <li><a class="page-scroll" href="#section-intro">About</a></li>
+                        <li><a class="page-scroll" href="#section-speaker">Speaker</a></li>
+                        <li><a class="page-scroll" href="#section-ajenda">Agenda</a></li>
+                        <li><a class="page-scroll" href="#section-pricing">Buy Ticket</a></li>
+                        <li><a class="page-scroll" href="#section-partner">Partners</a></li>
+                        <li><a class="page-scroll" href="#section-venue">Venue</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
 
- <!--dont remove-->
- <div class="img-caption" style="font-size: 20px;"></div>
- <!--dont remove end-->
- 
-<div id="wrapper-container">
+        <!-- .nav -->
+
+    </header>
+
+    <div class="jumbotron text-center">
+        <%= image_tag @event.event_image, class: "" %>
+        <div class="content">
+            <div class="event-date"><%= @event.start_time.strftime("%A, %b %d %Y @ %l:%M %p") %> | <%= @event.city %></div>
+            <h1><%= @event.name %></h1>
+            <p class="lead"><%= @event.description %></p>
+            <button type="button" class="btn btn-default btn-lg"><%= link_to 'VISIT SITE', @event.web_url, target: "_blank", id: "" %></button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- .Jumbotron-->
+<% if current_user %>
+<%= link_to edit_event_path @event do %><i style="font-size: 15px; margin-left: 50%; color: #009688;" class="fa fa-pencil"></i>
+<% end %>
+
+    <section id="section-intro" class="section-wrapper about-event">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <p class="lead" id="post-content">
+                        <%= simple_format(@event.summary, id: "post-content") %>
+                    </p>
+                    <p class="lead"> </p>
+                </div>
+                <div class="col-md-4">
+                    <address>
+                        <strong>Where</strong><br>
+                        <%= @event.location %>
+                        <br>
+                        <br>
+                        <strong>When</strong><br>
+                        <%= @event.start_time.strftime("%A, %b %d %Y @ %l:%M %p") %><br>
+                        <em>Until</em><br>
+                        <%= @event.end_time.strftime("%A, %b %d %Y @ %l:%M %p") %>
+                        <br>
+                    
+                        <!--<strong>Free?</strong><br>-->
+                        <!--<%= @event.free? %>-->
+                        <!--<br>-->
+                        <br>
+                        <strong>Share</strong><br>
+                        <abbr title="Phone">
+<!--share on twitter-->
+   <%= link_to "http://twitter.com/home?status=Check out this event  #{@event.name} #{event_url(@event)}", target: "_blank" do %><i style="font-size: 30px; color: #009688;" class="fa fa-twitter" title="Share on Twitter"></i><% end %></abbr> 
+                    </address>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- .about-event -->
+
+<!--Add new sections-->
+
+<!--sponsors, schedule, speakers, etc-->
+
+<!--new sections-->
     
-		<div class="container object">
 
+            <!--<div class="row">-->
+            <!--    <div class="col-md-12">-->
+            <!--        <div class="section-title">-->
+            <!--            <h2>STAY INFORMED</h2>-->
+            <!--            <p>Don't miss the event!</p>-->
+            <!--        </div>-->
+            <!--        <form id="contactForm" class="subscribe-form form-inline" action="sendemail.php" method="POST">-->
+            <!--            <div class="form-group">-->
+            <!--                <label for="emailTwo" class="sr-only">Email</label>-->
+            <!--                <input type="email" class="form-control input-lg" required="" id="emailTwo" name="email" placeholder="Enter your email address">-->
+            <!--            </div>-->
+            <!--            <button type="submit" class="btn btn-primary btn-lg">SUBSCRIBE</button>-->
+            <!--        </form>-->
+            <!--    </div>-->
+            <!--</div>-->
 
         </div>
-      </div>  
+    </section>
+    <!-- contact-section -->
 
+    <!-- .footer -->
+
+</div>
+<!-- #main-wrapper -->
+
+
+<!-- jquery -->
+<%= javascript_include_tag 'jquery-2.1.4.min.js', 'data-turbolinks-track' => true %>
+<!-- Bootstrap -->
+<%= javascript_include_tag 'bootstrap.min.js', 'data-turbolinks-track' => true %>
+
+<!-- Plugin JavaScript -->
+<%= javascript_include_tag 'jquery.easing.min.js', 'data-turbolinks-track' => true %>
+
+<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+<!--<script src="js/one-page-nav.js"></script>-->
+<%= javascript_include_tag 'scripts', 'data-turbolinks-track' => true %>
+</body>
+</html>
+<% end %>

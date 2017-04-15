@@ -1,10 +1,17 @@
 class StartupsController < ApplicationController
+  before_filter :authorize_admin, only: :index
   before_action :set_startup, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
   before_action :correct_user, only: [:edit, :update, :destroy]
 
   # GET /startups
   # GET /startups.json
+  
+  def authorize_admin
+    redirect_to root_path, status: 401 unless current_user.try(:admin?)
+    #redirects to previous page
+  end
+  
   def index
     @startups = Startup.all
   end

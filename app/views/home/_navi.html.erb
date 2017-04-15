@@ -13,11 +13,11 @@
       <!--          <div id="fleche-nav-2"></div>-->
     		<!--</div>-->
             
-            <div id="wrapper-title-3">
+      <!--      <div id="wrapper-title-3">-->
             <!--<a href="#"><div class="oldies object">StartUps</div></a>-->
-            <%= link_to 'startups', startups_path, class: "oldies object", title: "StartUps in our community" %>
-                <div id="fleche-nav-3"></div>
-    		</div>
+      <!--      <%= link_to 'startups', startups_path, class: "oldies object", title: "StartUps in our community" %>-->
+      <!--          <div id="fleche-nav-3"></div>-->
+    		<!--</div>-->
     		
     		  <div id="wrapper-title-3">
             <!--<a href="#"><div class="oldies object">Stories</div></a>-->
@@ -32,14 +32,14 @@
     		</div>
     		<div id="wrapper-title-3">
             <!--<a href="#"><div class="oldies object">Stories</div></a>-->
-            <%= link_to 'Events', events_path, class: "oldies object events", title: "Find evenets nearby. Post now for free!" , style: "pointer-events: ; color: #666;" %>
+            <%= link_to 'Events', events_path, class: "oldies object events", title: "Find evenets nearby. Post now for free!" , style: "pointer-events: ; color: #424242;" %>
             <div id="fleche-nav-3"></div>
     		</div>
     		
             </div>
             <div id="wrapper-bouton-icon">
                 <% if user_signed_in? %>
-            	<div id="bouton-ai"><%= link_to "Logout", destroy_user_session_path, method: :delete %></div>
+            	<div id="bouton-ai"><%= link_to "Logout", destroy_user_session_path, method: :delete, style: 'font-size: 11px;' %></div>
             	<%= link_to edit_user_registration_path, id: "bouton-psd" do %><i style="font-size: 15px;" class="fa fa-pencil" title="Edit Account"></i><% end %>
             	<% else %>
             	<div id="bouton-theme"><%= link_to "Login", new_user_session_path %></div>

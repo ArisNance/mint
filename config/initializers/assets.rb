@@ -11,13 +11,18 @@ Rails.application.config.assets.version = '1.0'
 # Rails.application.config.assets.precompile += %w( search.js )
  
 Rails.application.config.assets.precompile += %w( style.css )
+Rails.application.config.assets.precompile += %w( eventstyle.css )
 Rails.application.config.assets.precompile += %w( landing.css )
  
 #styles
-Rails.application.config.assets.precompile += %w( style.css )
+Rails.application.config.assets.precompile += %w( bootstrap.min.css )
   
 
 # js
 Rails.application.config.assets.precompile += %w( main.js )
 Rails.application.config.assets.precompile += %w( jquery.localScroll.min.js )
 Rails.application.config.assets.precompile += %w( jquery.scrollTo.min.js )
+Rails.application.config.assets.precompile += %w( scripts.js )
+Rails.application.config.assets.precompile += %w( jquery-2.1.4.min.js )
+Rails.application.config.assets.precompile += %w( jquery.easing.min.js )
+Rails.application.config.assets.precompile += %w( bootstrap.min.js )

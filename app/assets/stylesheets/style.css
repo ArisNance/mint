@@ -189,7 +189,8 @@ body,html{
  
 .logo img{height:100%;
 		  width:100%;
-		  margin-top: -20px;	
+		  margin-top: -20px;
+		  padding-top: 20px;
 }
  
 .logo img{height:100%;width:100%;}
