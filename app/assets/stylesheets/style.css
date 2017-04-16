@@ -776,6 +776,11 @@ form {
 	width:50%;
 }
 
+#cursive-text {
+	font-family: 'Pacifico';
+	letter-spacing: 10px;
+}
+
 #oldnew-prev,#oldnew-next{
 	width:43px;
 	height:43px;
