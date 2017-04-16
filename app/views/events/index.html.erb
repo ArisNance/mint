@@ -107,17 +107,20 @@
 	<% @event.each do |event| %>
 	<figure class="white">
 		<a href="#" style="text-decoration: none;pointer-events: none; cursor: default;">
+			<div id="date-text"><h6><%= event.start_time.strftime("%b %d") %></h6></div>
 		<%= image_tag event.event_image %>
+			
 			<dl>
-				<dt><%= link_to event.name, event %></dt>
+				<dt><%= link_to event.organizer, event %></dt>
 				<br>
 				<dd><%= truncate(event.summary, length: 50) { link_to "Continue", event } %></dd>	
 			</dl>
 		</a>
       <div id="wrapper-part-info">
       <!--<div class="part-info-image"><img src="assets/icon-psd.svg" alt="" width="28" height="28"/></div>-->
-      <div id="part-info"><%= event.organizer %></div>
-					</div>
+      <div id="part-info"><%= event.name %></div>
+
+	  </div>
      </figure>	
 				<% end %>
                 

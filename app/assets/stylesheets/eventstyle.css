@@ -735,6 +735,17 @@ button:focus,
     z-index    : 9999;
     }
 
+#date-text {
+    position: absolute;
+    margin-top: 35%;
+    margin-left: 25%;
+}
+
+#date-text, h6 {
+    font-size: 40px;
+    color: #f4f4f4;
+}
+
 #status,
 .status-mes {
     background-image    : url(../img/preloader.gif);
@@ -755,3 +766,10 @@ button:focus,
     text-align : center;
     top        : 65%;
     }
+    
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+#date-text {
+	margin-left: 20%;
+	
+	}
+}
