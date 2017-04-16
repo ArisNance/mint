@@ -130,7 +130,7 @@
     <br>
     <!-- .Jumbotron-->
 
-<%= link_to edit_event_path @event do %><i style="font-size: 15px; margin-left: 50%; color: #009688;" class="fa fa-pencil"></i>
+<%= link_to edit_event_path @event do %><i style="font-size: 15px; margin-left: 50%; color: #009688;" class="fa fa-pencil"><% end %></i>
 
     <section id="section-intro" class="section-wrapper about-event">
         <div class="container">
@@ -214,4 +214,3 @@
 <%= javascript_include_tag 'scripts', 'data-turbolinks-track' => true %>
 </body>
 </html>
-<% end %>
