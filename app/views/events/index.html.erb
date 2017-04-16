@@ -118,7 +118,7 @@
 		</a>
       <div id="wrapper-part-info">
       <!--<div class="part-info-image"><img src="assets/icon-psd.svg" alt="" width="28" height="28"/></div>-->
-      <div id="part-info"><%= event.name %></div>
+      <div id="part-info"><%= truncate(event.name, length: 25) %></div>
 
 	  </div>
      </figure>	
