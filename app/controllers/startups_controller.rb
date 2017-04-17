@@ -14,6 +14,7 @@ class StartupsController < ApplicationController
   
   def index
     @startups = Startup.all
+    @startups = Startup.paginate(:page => params[:page], :per_page => 4)
   end
 
   # GET /startups/1

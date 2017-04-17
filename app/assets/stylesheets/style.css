@@ -781,6 +781,14 @@ form {
 	letter-spacing: 10px;
 }
 
+.pagination > li:first-child > a, .pagination > li:first-child > span{
+	z-index: 1;
+}
+
+.pagination > li > a, .pagination > li > span {
+	z-index: 1;
+}
+
 #oldnew-prev,#oldnew-next{
 	width:43px;
 	height:43px;
