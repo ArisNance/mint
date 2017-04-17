@@ -8,7 +8,6 @@
 	
 <style>
 .wrapper {
-	margin-top: 25% !important;
 }
 
 .border{
@@ -247,7 +246,7 @@ img {
 
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
 .wrapper {
-	margin-top: 90% !important;
+	margin-top: 70% !important;
 	
 	}
 }
@@ -259,6 +258,14 @@ img {
 	}
 }
 
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+.part-info-image {
+    margin-left: 40% !important;
+    margin-top: -15% !important;
+
+	
+	}
+}
 
 .jumbotron {
 	position: absolute;
@@ -271,17 +278,21 @@ img {
 	<div class="border"></div>
 	<!--header image-->
     <div class="jumbotron text-center">
-        <img src="https://images.unsplash.com/photo-1492161587417-3562f41c95fe?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1917&fit=max&s=8e562cc8bf9487ee285652ba667b97ff">
-        <div class="content">
-            <div class="event-date"> </div>
-            <h1 id="cursive-text">Events</h1>
-            <p class="lead" style="font-family: Pacifico;">Here's to Keeping it Local. </p>
+        <img src="https://images.unsplash.com/photo-1492305175278-3b3afaa2f31f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1917&fit=max&s=1aabbccdf61bfdc460343977b9d9d58d">
+   <!--     <div class="content">-->
+   <!--         <div class="event-date"> </div>-->
+   <!--         <h1 id="cursive-text">Events</h1>-->
+   <!--         <p class="lead" style="font-family: Pacifico;">Here's to Keeping it Local. </p>-->
 			<!--button was removed-->
-        </div>
+   <!--     </div>-->
     </div>
 <!--header end-->
 	<div class="wrapper">
-
+<div class="part-info-image" style="z-index: 100;
+    position: absolute !important;margin-left: 20%;
+    margin-top: -5%;
+    color: #E91E63 !important;"><%= link_to new_event_path do %><i style="font-size: 30px; .part-info-image {
+}" class="fa fa-plus-circle" title="Post an Event"></i><% end %></div>
 		<ul id="timeline">
 	<% @event.each do |event| %>
       <a href="#">

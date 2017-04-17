@@ -4,15 +4,19 @@ Rails.application.routes.draw do
   resources :poems
   resources :galleries
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  resources :stories
-  resources :startups
+  resources :stories, :path => 'literature'
+  # resources :startups
   resources :people
-  resources :pins
+  resources :pins, :path => 'history'
   devise_for :users
   root 'home#landing'
   # get 'home/index'
   devise_scope :user do get 'users/sign_out' => "devise/sessions#destroy"
   end
+  
+resources :startups, :path => 'directory'
+  
+
   
   get 'home/photos'
   get 'home/index'
