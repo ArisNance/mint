@@ -3,7 +3,7 @@
     		<div id="wrapper-sorting">
             <div id="wrapper-title-1">
             <!--<div class="top-rated object">BLacK History</div>-->
-            <%= link_to 'black history', home_index_path, class: "top-rated object", title: "Discover prominent figures, and add your own." %>
+            <%= link_to image_tag("mints-logo.png"), root_path %>
             	<div id="fleche-nav-1"></div>
     		</div>
             
@@ -19,15 +19,15 @@
                 <div id="fleche-nav-3"></div>
     		</div>
     		
-    		  <div id="wrapper-title-3">
+    		 <div id="wrapper-title-3">
             <!--<a href="#"><div class="oldies object">Stories</div></a>-->
-            <%= link_to 'literature', stories_path, class: "oldies object", title: "Read writings from people just like you. " %>
+            <%= link_to 'jobs', stories_path, class: "oldies object", title: "Post or Find jobs  " %>
                 <div id="fleche-nav-3"></div>
     		</div>
     		
     		<div id="wrapper-title-3">
-            <!--<a href="#"><div class="oldies object">Stories</div></a>-->
-            <%= link_to 'Poetry', poems_path, class: "oldies object", title: "Read, Write, & Share Poety." %>
+            <a href="#" style="pointer-events: none;"><div class="oldies object">Give</div></a>
+            <%= link_to '', class: "oldies object", title: "Read, Write, & Share Poety." %>
             <div id="fleche-nav-3"></div>
     		</div>
     		<div id="wrapper-title-3">
@@ -54,9 +54,9 @@
 
 <div id="wrapper-header">
 	<div id="main-header" class="object">
-		<div class="logo">
-		<%= link_to image_tag("mints-logo.png"), root_path %>
-		</div>
+		<!--<div class="logo">-->
+		<!--<%= link_to image_tag("mints-logo.png"), root_path %>-->
+		<!--</div>-->
 		
         <div id="main_tip_search"> 
 			<form>

@@ -7,6 +7,8 @@ class StoriesController < ApplicationController
   # GET /stories.json
   def index
     @stories = Story.all
+    # @stories = Story.paginate(:page => params[:page], :per_page => 4)
+    @stories = Story.order('created_at DESC').paginate(:page => params[:page], :per_page => 4)
   end
 
   # GET /stories/1
@@ -31,7 +33,7 @@ class StoriesController < ApplicationController
 
     respond_to do |format|
       if @story.save
-        format.html { redirect_to @story, notice: 'Story was successfully created.' }
+        format.html { redirect_to @story, notice: 'Job was successfully created.' }
         format.json { render :show, status: :created, location: @story }
       else
         format.html { render :new }
@@ -45,7 +47,7 @@ class StoriesController < ApplicationController
   def update
     respond_to do |format|
       if @story.update(story_params)
-        format.html { redirect_to @story, notice: 'Story was successfully updated.' }
+        format.html { redirect_to @story, notice: 'Job was successfully updated.' }
         format.json { render :show, status: :ok, location: @story }
       else
         format.html { render :edit }
@@ -59,7 +61,7 @@ class StoriesController < ApplicationController
   def destroy
     @story.destroy
     respond_to do |format|
-      format.html { redirect_to stories_url, notice: 'Story was successfully destroyed.' }
+      format.html { redirect_to stories_url, notice: 'Job was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -78,5 +80,5 @@ end
 
 def correct_user
   @story = current_user.stories.find_by(id: params[:id])
-  redirect_to stories_path, notice: "Not authorized to edit this story" if @story.nil?
+  redirect_to stories_path, notice: "Not authorized to edit this Job" if @story.nil?
 end

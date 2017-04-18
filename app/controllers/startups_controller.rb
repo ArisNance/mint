@@ -1,17 +1,10 @@
 class StartupsController < ApplicationController
-  # before_filter :authorize_admin, only: :index
   before_action :set_startup, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
   before_action :correct_user, only: [:edit, :update, :destroy]
 
   # GET /startups
   # GET /startups.json
-  
-  # def authorize_admin
-  #   redirect_to root_path, status: 401 unless current_user.try(:admin?)
-  #   #redirects to previous page
-  # end
-  
   def index
     @startups = Startup.all
     @startups = Startup.paginate(:page => params[:page], :per_page => 4)
@@ -38,8 +31,8 @@ class StartupsController < ApplicationController
 
     respond_to do |format|
       if @startup.save
-        format.html { redirect_to @startup, notice: 'Startup was successfully created.' }
-        format.json { render :show, status: :created, location: @startup }
+        format.html { redirect_to @startup, notice: 'startup was successfully created.' }
+        format.json { render :index, status: :created, location: @startup }
       else
         format.html { render :new }
         format.json { render json: @startup.errors, status: :unprocessable_entity }
@@ -52,8 +45,8 @@ class StartupsController < ApplicationController
   def update
     respond_to do |format|
       if @startup.update(startup_params)
-        format.html { redirect_to @startup, notice: 'Startup was successfully updated.' }
-        format.json { render :show, status: :ok, location: @startup }
+        format.html { redirect_to @startup, notice: 'startup was successfully updated.' }
+        format.json { render :index, status: :ok, location: @startup }
       else
         format.html { render :edit }
         format.json { render json: @startup.errors, status: :unprocessable_entity }
@@ -66,7 +59,7 @@ class StartupsController < ApplicationController
   def destroy
     @startup.destroy
     respond_to do |format|
-      format.html { redirect_to startups_url, notice: 'Startup was successfully destroyed.' }
+      format.html { redirect_to startups_url, notice: 'startup was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -79,11 +72,11 @@ class StartupsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def startup_params
-      params.require(:startup).permit(:company_name, :location, :founder, :team_two, :team_three, :web_url, :twitter_url, :facebook_url, :option_url, :summary )
+      params.require(:startup).permit(:company_name, :location, :founder, :team_two, :team_three, :web_url, :twitter_url, :facebook_url, :option_url)
     end
 end
 
 def correct_user
   @startup = current_user.startups.find_by(id: params[:id])
-  redirect_to startups_path, notice: "Not authorized to edit this company" if @startup.nil?
+  redirect_to startups_path, notice: "Not authorized to edit this post" if @startup.nil?
 end

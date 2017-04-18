@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :poems
   resources :galleries
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  resources :stories, :path => 'literature'
+  resources :stories, :path => 'jobs'
   # resources :startups
   resources :people
   resources :pins, :path => 'history'

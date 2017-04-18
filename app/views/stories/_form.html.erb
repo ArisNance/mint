@@ -22,35 +22,28 @@
   <% end %>
 
   <div class="form-group">
-    <%= f.label :title %><br>
-    <%= f.text_field :title, placeholder: 'The Journey', class: "form-control" %>
+    <%= f.label :Company_Name %><br>
+    <%= f.text_field :facebook_url, required: true, placeholder: 'Organization or Company Name', class: "form-control" %>
+    <br>
+    <%= f.label :Job_title %><br>
+    <%= f.text_field :title, placeholder: 'Community Director', class: "form-control" %>
     <br>
     <br>
     <!--mints Gallery-->
-    <div id="page-head-text-hide-on-mobile">
-    <hr style="border-top: 1px solid #00d49b;">
-    <%= link_to home_photos_path, target: "_blank" do %><i style="font-size: 25px;" class="fa fa-camera" title="mints Gallery"></i><% end %>
-    <span style="margin-left: 16%;"><strong>Click</strong> to explore images in the mints gallery.</span>
-    <br>
-    <br>
-    <hr style="border-top: 1px solid #00d49b;">
-    <br>
-    </div>
+    
    <!--end-->
-    <%= f.label :image %><br>
-    <%= f.text_field :header_image, placeholder: 'Recommended  800 x 500 | http://www.lavail.io/url_to_person_image.png', class: "form-control" %>
+    <%= f.label :Company_Logo %><br>
+    <%= f.text_field :header_image, placeholder: ' http://www.lavail.io/url_to_logo.png', class: "form-control" %>
     <br>
         
-    <%= f.label :Share_Your_Story %><br>
-    <%= f.text_area :description, placeholder: '...| ', class: "form-control" %><br>
+    <%= f.label :Job_Description %><br>
+    <%= f.text_area :description, placeholder: '|... ', class: "form-control" %><br>
 
-    <%= f.label :twitter %><br>
+    <%= f.label :Application_Link %><br>
     <%= f.text_field :twitter_url, required: false, placeholder: 'http://www.lavail.io/profile-name | Leave blank to remain anonymous', class: "form-control" %><br>
-    
-    <%= f.label :facebook %><br>
-    <%= f.text_field :facebook_url, placeholder: 'http://www.facebook.com/profile-name | Leave blank to remain anonymous', class: "form-control" %><br>
+  
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit value: 'Post Job' %>
   </div>
 <% end %>

@@ -1,179 +1,324 @@
-
-
-<!DOCTYPE HTML>
 <html>
-
 <head>
+	  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" centent="width=device-width, initial-scale=1">
+	
 <style>
-#wrapper-navbar{
-    margin-top: -10px;
+.wrapper {
 }
 
-	.img-fluid {
-	width: 440px;
-	height: 330px;
+.border{
+	height: 6px;
+	border:0;
+	background-color: #fd7576;
+	background-image: linear-gradient(to right, #fd7576, #fd7576 25%, #fec85d 25%, #fec85d 50%, #4db8de 50%, #4db8de 75%, #a378fc 75%, #a378fc 100%, #a378fc 100%);
+	-webkit-background-size: 50% 100%;
+  -moz-background-size: 50% 100%;
+  background-size: 50% 100%; 
+  
 }
+
+.clearfix:before, .clearfix:after {
+	content:" ";
+	display: table;
+
+}
+.clearfix:after{
+	clear: both;
+}
+.wrapper{
+	width:800px;
+	max-width: 90%;
+	margin: 0 auto;
+	margin-top: 20%;
+}
+.main_header{
+	margin: 5em 0 3em 0;
+}
+
+.current{
+	color: #34324b;
+	font-weight: 700;
+	
+}
+#timeline{
+  width: 100%;
+  position: relative;
+  list-style: none;
+  padding: 0;
+
+}
+#timeline a {
+text-decoration: none;
+
+}
+ #timeline:after {
+    content: "";
+    width: 1px;
+    background: 1px #e6e7e9;
+    height: 90%;
+    position: absolute;
+    top: 3em;
+    left: 3em;
+    z-index: 0; }
+#timeline .listing{
+  background-color: white;
+  border: 1px solid #e6e7e9;
+  border-radius: 0.3em;
+  padding: 1em;
+  margin-bottom: 1em;
+  position: relative;
+  z-index: 1;
+  display: table;
+  width: 100%;
+  transition: all .3s ease-in-out;
+
+
+}
+.listing:hover{
+  cursor: pointer;
+  box-shadow: 0px 2px 40px 0 rgba(0,0,0,0.1);
+
+}
+#timeline .listing img,.info,.job_type{
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 0.9em;
+  color: #74718f;
+
+}
+#timeline .image_wrapper{
+  width: 60px;
+}
+#timeline .image_wrapper img{
+  width: 60px;
+  display : block;
+  margin : 0 auto;
+  border-radius: 0.25em;
+}
+.info{
+  line-height: 1.25;
+  width: 640px;
+  padding-left: 25px;
+}
+.job_title{
+  font-weight: 700;
+  font-size: 1.5em;
+  color: #34324b;
+}
+.job_info{
+  color: rgb(90, 90, 90);
+  display: block;
+  font-size: 15px;
+
+}
+.job_info span{
+  margin: 0 .75em;
+}
+.job_type{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.75em;
+  position: relative;
+  white-space: nowrap;
+  padding-top: .6em;
+  width: 100px;
+}
+.job_type:before{
+  content: " ";
+  background-color: #fd7576;
+  width:10px;
+  height: 10px;
+  border-radius: 100%;
+  position: absolute;
+  left:-20px;
+  top:27px;
+}
+.full_time{
+  color: #00dda1;
+
+}
+.full_time:before{
+background-color:#02d29a;
+}
+.part_time{
+  color: #fec85d;
+
+}
+.part_time:before{
+background-color:#fec85d;
+}
+.freelance{
+  color: #4db8de;
+
+}
+.freelance:before{
+background-color:#4db8de;
+}
+.contract{
+  color: #a378fc;
+
+}
+.contract:before{
+background-color:#a378fc;
+}
+.date{
+  display: inline-block; 
+  padding: 1em 0;
+  width: 100px;
+  background-color: white;
+  border: 1px solid #e6e7e9;
+  border-radius: 3em;
+  font-weight: 700;
+  font-size: .75em;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  margin : 1em 0 2em 0;
+  color: #34324b;
+}
+.load_more{
+  text-align: center;
+
+}
+.button{
+  border : 2px solid #a378fc;
+  outline: none;
+  padding: 1em 3.5em;
+  text-align: center;
+  background: transparent;
+  border-radius: 3em;
+  color: #a378fc;
+  transition:all .3s ease-in-out;
+}
+
+#main-container-footer{
+	display: none;
+}
+
+#wrapper-copyright {
+	display: none;
+}
+
+#wrapper-navbar {
+    float: left;
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    border-bottom: none;
+    opacity: 1;
+    z-index: 100;
+    position: absolute;
+    /* color: white !important; */
+}
+
+.top-rated {
+	color: #fff !important;
+}
+
+.button:hover{
+ background-color: #a378fc;
+  color: white;
+
+}
+@media only screen and (max-width: 768px){
+  .main_header{
+  margin: 3em 0;
+}
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+img {
+	width: %;
+	
+	}
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+.jumbotron .content {
+	top: 30% !important;
+	
+	}
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+.wrapper {
+	margin-top: 70% !important;
+	
+	}
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+.jumbotron .content p.lead {
+   letter-spacing: 4px;
+	
+	}
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+.part-info-image {
+    margin-left: 40% !important;
+    margin-top: -15% !important;
+
+	
+	}
+}
+
+
+.jumbotron {
+	position: absolute;
+	z-index: 1;
+}
+
 </style>
-
-
-</head>
-
+</head>	
 <body>
-
-<a name="ancre"></a>
-
-<!-- CACHE -->
-<div class="cache"></div>
-
-
-<!-- NAVBAR -->
-
-<!--moved to partial-->
-
-<!-- FILTER -->	
-
-	<div id="main-container-menu" class="object">
-    	<div class="container-menu">
-        	
-            <div id="main-cross">
-            	<div id="cross-menu"></div>
-            </div>
-            
-            <div id="main-small-logo">
-            	<div class="small-logo"></div>
-            </div>
-            
-            <div id="main-premium-ressource">
-                <div class="premium-ressource"><a href="#">Premium resources</a></div>
-            </div>
-            
-            <div id="main-themes">
-                <div class="themes"><a href="#">Latest themes</a></div>
-            </div>
-            
-            <div id="main-psd">
-                <div class="psd"><a href="#">PSD goodies</a></div>
-            </div>
-                
-            <div id="main-ai">
-                <div class="ai"><a href="#">Illustrator freebies</a></div>
-            </div>
-            
-            <div id="main-font">
-                <div class="font"><a href="#">Free fonts</a></div>
-            </div>
-            
-            <div id="main-photo">
-                <div class="photo"><a href="#">Free stock photos</a></div>
-            </div>
-            
-        </div>
+	<div class="border"></div>
+	<!--header image-->
+    <div class="jumbotron text-center">
+        <img src="https://images.unsplash.com/photo-1492305175278-3b3afaa2f31f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1917&fit=max&s=1aabbccdf61bfdc460343977b9d9d58d">
+   <!--     <div class="content">-->
+   <!--         <div class="event-date"> </div>-->
+   <!--         <h1 id="cursive-text">Directory</h1>-->
+   <!--         <p class="lead" style="font-family: Pacifico;">Here's to Keeping it Local. </p>-->
+			<!--button was removed-->
+   <!--     </div>-->
     </div>
-
-
-<!-- PORTFOLIO -->
-
-	<div id="wrapper-container">
-    
-		<div class="container object">
-
-<div id="main-container-image">
-	<br>
-
-	<h4 class="page-head-text" id="page-head-text-hide-on-mobile">Need some inspiration? <br> Search the mints photo gallery. <%= link_to 'mints', home_photos_path, target: "_blank" %> </h4>
-	<section class="work">
-		<!--permanent card -->
-		<figure class="white">
-			<a href="#">
-				<%= image_tag "/assets/mint-story" %>
-				<dl>
-					<!--<dt></dt>-->
-					<dd>Every person has a <strong>story</strong>, but telling that story can be challegeing. <strong>STORIES</strong> is a place to do just that. Here you can share your stories of triumph, pain, everyday life, relationships and just about anything else that's on your heart, all free of judgement.</dd>	
-				</dl>
-			</a>
-  <div id="wrapper-part-info">
-	<div class="part-info-image"><%= link_to new_story_path do %><i style="font-size: 30px;" class="fa fa-plus-circle" title="Submit a Story"></i><% end %></div>
-  <div id="part-info"> </div>
-				</div>
-			</figure>	
-			<!--permanent card end-->
-			
-<!--promoted card-->
-<figure class="white" id="page-head-text-hide-on-mobile">
-<a href="#">
-	<%= image_tag "/assets/mint-photos" %>
-	<dl>
-	<dt><%= link_to 'mints', home_photos_path, target: "_blank" %></dt>
-	<br>
-	<dd>Looking for a high resolution photo for your next Story? Well we've got you covered. Search the Mints Gallery for the right shot.</dd>	
-	</dl>
-</a>
-  <div id="wrapper-part-info">
-	<div class="part-info-image"><%= link_to home_photos_path, target: "blank" do %><i style="font-size: 23px;" class="fa fa-camera" title="Find a photo in our Gallery"></i><% end %></div>
-  <div id="part-info"> </div>
-
-<!--promoted card end--></figure>	
-
+<!--header end-->
+	<div class="wrapper">
+<div class="part-info-image" style="z-index: 100;
+    position: absolute !important;margin-left: 20%;
+    margin-top: -5%;
+    color: #E91E63 !important;"><%= link_to new_story_path do %><i style="font-size: 30px; .part-info-image {
+}" class="fa fa-plus-circle" title="Add a Position"></i><% end %></div>
+		<ul id="timeline">
 	<% @stories.each do |story| %>
-	<figure class="white">
-		<a href="#" style="text-decoration: none;pointer-events: none; cursor: default;">
-			<%= image_tag(story.header_image, class: 'img-fluid') %>
-			<dl>
-				<dt><%= link_to story.title, story %></dt>
-				<br>
-				<dd><%= truncate(story.description, length: 200) { link_to "Continue", story } %></dd>	
-			</dl>
-		</a>
-      <div id="wrapper-part-info">
-      <!--<div class="part-info-image"><img src="assets/icon-psd.svg" alt="" width="28" height="28"/></div>-->
-      <div id="part-info"><%= story.title %></div>
-					</div>
-     </figure>	
-				<% end %>
-                
-			</section>
-            
-		</div>	
-    	    
+      <a href="#">
+        <li class="listing clearfix">
+          <div class="image_wrapper">
+            <%= link_to image_tag(story.header_image), title: "Click Apply" %>
+          </div>
+          <div class="info">
+            <span class="job_title"><%= story.title %></span>
+            <br>
+            <br>
+            <span class="job_info"><span> <%= story.facebook_url %></span>  <span>|</span>Posted &nbsp<strong><%= story.created_at.strftime("%b %d") %></strong></span>
+          </div>
+          <span class="job_type full_time" style="color: "><%= link_to 'APPLY', story.twitter_url, target: '_blank' %></span>
+          <br>
+          <% if current_user %>
+          <%= link_to edit_story_path(story) do %><i style="font-size: 15px; margin-left: 50%; color: #009688;" class="fa fa-pencil"></i><% end %>
+          <% end %>
+        </li>
+      </a>
+	<% end %>
+     
+    </ul>
+	<div class="load_more">
+		<%= will_paginate @story %>
 	</div>
- 
-    <div id="wrapper-oldnew">
-    	<div class="oldnew">
-        	<div class="wrapper-oldnew-prev">
-            	<div id="oldnew-prev"></div>
-        	</div>
-            <div class="wrapper-oldnew-next">
-            	<div id="oldnew-next"></div>
-    		</div>
-        </div>
-	</div>     
-            
-	<div id="wrapper-thank">
-    	<div class="thank">
-        	<div class="thank-text">R<span style="letter-spacing:-5px;">e</span>ad</div>
-    	</div>
-	</div>
-
-</div>
-
-
-
-<!-- SCRIPT -->
-
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!--<script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>-->
-    <!--<script type="text/javascript" src="js/jquery.localScroll.min.js"></script>-->
-	<!--<script type="text/javascript" src="js/fastclick.min.js"></script>-->
-	<!--<script type="text/javascript" src="js/jquery.animate-colors-min.js"></script>-->
-
-	
-<script>
-	
-
-</script>
-
-
 </body>
-
-
 </html>

@@ -789,6 +789,15 @@ form {
 	z-index: 1;
 }
 
+.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus {
+	background-color: #272727;
+    border-color: transparent;
+}
+
+.border {
+	height: 1px !important
+}
+
 #oldnew-prev,#oldnew-next{
 	width:43px;
 	height:43px;
