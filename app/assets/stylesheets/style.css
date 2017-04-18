@@ -255,10 +255,10 @@ body,html{
 	letter-spacing:1.5px;
 }
 
-.top-rated{color:#666;margin-left:15px;font-weight:500;}
-.recent,.oldies{color: #CCC;margin-left:80px;font-weight:500;margin-left:40px;}
+.top-rated{color:#fff;margin-left:15px;font-weight:500;}
+.recent,.oldies{color: #fff;margin-left:80px;font-weight:500;margin-left:40px;}
 
-.top-rated:hover,.recent:hover,.oldies:hover{color:#666;opacity:1;}
+.top-rated:hover,.recent:hover,.oldies:hover{color:#fff;opacity:1;}
 
 #fleche-nav-1,#fleche-nav-2,#fleche-nav-3{
 	float:left;
@@ -526,6 +526,10 @@ form {
 	line-height:100%;
 	margin-top:40px;
 
+}
+
+a.oldies.object{
+	color: #fff !important;
 }
 
 .work figure dl dd {
@@ -1184,6 +1188,25 @@ form {
     /*background: #333 !important;*/
 	}
 }
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+#wrapper-header {
+    background-color: #333333 !important;
+	}
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+#wrapper-navbar {
+    background-color: #333333;
+	}
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+.oldies {
+    margin-top: -20px;
+	}
+}
+
 
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
 .profile-card-wrap .content{

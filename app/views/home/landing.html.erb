@@ -7,11 +7,17 @@
   display: none;
 }
 
+
 #main-container-footer{
-  display: none;
+	display: none;
 }
+
 #wrapper-bouton-icon {
     display: none;
+}
+
+.oldies {
+	display: none;
 }
 
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
@@ -99,7 +105,7 @@ p span {
     <br>
     <% if user_signed_in? %>
     <!--mobile display link-->
-    <%= link_to 'Go Home', home_index_path, id: "hide-mobile" %>
+    <%= link_to 'Go Home', startups_path, id: "hide-mobile" %>
     <% else %>
     <%= link_to 'Join Now', new_user_registration_path %>
     <br>

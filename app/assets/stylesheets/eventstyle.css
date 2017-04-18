@@ -345,6 +345,10 @@ button:focus,
 /*-------------------
  * Jumbotron
  *-------------------*/
+ body > div.jumbotron.text-center > img {
+    width: 100%;
+ }
+ 
 
 .jumbotron {
     background            : url("");
@@ -352,7 +356,7 @@ button:focus,
     padding               : 0;
     margin                : 0;
     height                : 100vh;
-    min-height            : 700px;
+    min-height            : 850px;
     vertical-align        : middle;
     position              : relative;
     background-attachment : fixed;
