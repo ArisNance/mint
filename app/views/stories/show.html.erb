@@ -170,7 +170,7 @@ bootstrap.min.s…….css?body=1:6
             <div class="story-date"><em>Good Luck</em>! | <%= @story.title %></div>
             <h1><%= @story.facebook_url %></h1>
             <p class="leads"><%= image_tag @story.header_image, style: "height: 70px;
-            width: 70px;" %></p>
+            width: auto;" %></p>
             <br>
             <div class="story-date"><%= @story.description %></div>
             <button type="button" class="btn btn-default btn-lg"><%= link_to 'APPLY', @story.twitter_url, target: "_blank", id: "" %></button>
