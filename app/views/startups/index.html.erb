@@ -7,6 +7,18 @@
 	<meta name="viewport" centent="width=device-width, initial-scale=1">
 	
 <style>
+
+.fa-facebook{
+  margin-left: 12%;
+  padding-right: 20px;
+  color: #2196F6;
+  
+}
+
+.fa-twitter {
+  color: #03a9f4;
+}
+
 .wrapper {
 }
 
@@ -196,7 +208,7 @@ background-color:#a378fc;
 }
 
 #main-container-footer{
-	display: none;
+	display: ;
 }
 
 #wrapper-copyright {
@@ -303,6 +315,10 @@ img {
           </div>
           <div class="info">
             <span class="job_title"><%= startup.company_name %></span>
+            <span><%= link_to startup.facebook_url, target: '_blank' do %><i style="font-size: 20px;" class="fa fa-facebook" title="Visit Page"></i><% end %>
+            <%= link_to startup.twitter_url, target: '_blank' do %><i style="font-size: 20px;" class="fa fa-twitter" title="Visit Page"></i><% end %>
+            </span>
+            
             <br>
             <br>
             <span class="job_info"><span> <%= startup.location %></span>  <span>|</span>  <strong><%= startup.founder %></strong></span>

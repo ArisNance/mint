@@ -167,13 +167,14 @@ bootstrap.min.s…….css?body=1:6
     <div class="jumbotron text-center">
         <!--<img src="https://images.unsplash.com/photo-1492371451031-f0830e91b3d9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1917&fit=max&s=f7eeb6ee02532516580a5ffa1007fdd0">-->
         <div class="content">
-            <div class="story-date"><em>Good Luck</em>! | <%= @story.title %></div>
+            <div class="story-date"> | <%= @story.title %></div>
             <h1><%= @story.facebook_url %></h1>
             <p class="leads"><%= image_tag @story.header_image, style: "height: 70px;
             width: auto;" %></p>
             <br>
             <div class="story-date"><%= @story.description %></div>
             <button type="button" class="btn btn-default btn-lg"><%= link_to 'APPLY', @story.twitter_url, target: "_blank", id: "" %></button>
+     
         </div>
     </div>
     <br>
@@ -205,6 +206,10 @@ bootstrap.min.s…….css?body=1:6
                         <br>
                         <strong>Apply Now</strong><br>
                         <%= link_to 'Go to Application', @story.twitter_url, target: "_blank", id: "" %>
+                        <br>
+                        <br>
+                        <strong>Application End Date</strong><br>
+                        <%= @story.end_time.strftime("%A, %b %d") %>
                         <br>
                         <br>
                         <strong>Share</strong>

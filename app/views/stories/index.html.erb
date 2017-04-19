@@ -308,9 +308,7 @@ img {
           </div>
           <span class="job_type full_time" style="color: "><%= link_to 'APPLY', story, target: '_blank' %></span>
           <br>
-          <% if current_user %>
-          <%= link_to edit_story_path(story) do %><i style="font-size: 15px; margin-left: 50%; color: #009688;" class="fa fa-pencil"></i><% end %>
-          <% end %>
+          
         </li>
       </a>
 	<% end %>

@@ -379,6 +379,13 @@ button:focus,
     -webkit-transform : translateY(-50%);
     -moz-transform    : translateY(-50%);
     }
+    
+#timeline .image_wrapper img{
+  width: 70px !important;
+  display : block;
+  margin : 0 auto;
+  border-radius: 0.25em;
+}
 
 .jumbotron .content h1 {
     color       : #ffffff;
