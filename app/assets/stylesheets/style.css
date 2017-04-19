@@ -883,6 +883,10 @@ a.oldies.object{
 	font-weight:400;
 }
 
+#timeline .listing {
+	border-radius: 0px !important;
+}
+
 /*----------------------------*/
 /* SEARCH BOX */
 /*----------------------------*/
@@ -1017,6 +1021,10 @@ a.oldies.object{
 }
 }
 
+.story-date {
+	font-size: 20px;
+    letter-spacing: 1.5px;
+}
  
 /* Small viewports � Old monitors, netbooks, tablets (landscape), etc. */
  

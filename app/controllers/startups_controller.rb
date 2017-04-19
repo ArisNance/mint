@@ -31,7 +31,7 @@ class StartupsController < ApplicationController
 
     respond_to do |format|
       if @startup.save
-        format.html { redirect_to @startup, notice: 'startup was successfully created.' }
+        format.html { redirect_to startups_url, notice: 'listing was successfully created.' }
         format.json { render :index, status: :created, location: @startup }
       else
         format.html { render :new }
@@ -45,7 +45,7 @@ class StartupsController < ApplicationController
   def update
     respond_to do |format|
       if @startup.update(startup_params)
-        format.html { redirect_to @startup, notice: 'startup was successfully updated.' }
+        format.html { redirect_to startups_url, notice: 'listing was successfully updated.' }
         format.json { render :index, status: :ok, location: @startup }
       else
         format.html { render :edit }

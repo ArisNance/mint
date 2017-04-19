@@ -33,8 +33,8 @@ class StoriesController < ApplicationController
 
     respond_to do |format|
       if @story.save
-        format.html { redirect_to @story, notice: 'Job was successfully created.' }
-        format.json { render :show, status: :created, location: @story }
+        format.html { redirect_to stories_url, notice: 'Job was successfully created.' }
+        format.json { render :index, status: :created, location: @story }
       else
         format.html { render :new }
         format.json { render json: @story.errors, status: :unprocessable_entity }
@@ -47,8 +47,8 @@ class StoriesController < ApplicationController
   def update
     respond_to do |format|
       if @story.update(story_params)
-        format.html { redirect_to @story, notice: 'Job was successfully updated.' }
-        format.json { render :show, status: :ok, location: @story }
+        format.html { redirect_to stories_url, notice: 'Job was successfully updated.' }
+        format.json { render :index, status: :ok, location: @story }
       else
         format.html { render :edit }
         format.json { render json: @story.errors, status: :unprocessable_entity }
