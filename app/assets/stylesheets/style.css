@@ -822,7 +822,6 @@ a.oldies.object{
 	height:auto;
 	background-color:#f4f4f4;
 	border-top:solid #F1F1F1 1px;
-
 }
 
 #row-1f,#row-2f,#row-3f,#row-4f{
@@ -1179,6 +1178,8 @@ a.oldies.object{
     font-size: 50px;
 }
 }
+
+
 /* Mobile phones (iphone4/5)*/
  
 @media only screen and (max-width: 320px) {
