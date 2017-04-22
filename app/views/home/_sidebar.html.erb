@@ -1,0 +1,52 @@
+    <div class="sidebar" data-background-color="white" data-active-color="danger">
+
+    <!--
+		Tip 1: you can change the color of the sidebar's background using: data-background-color="white | black"
+		Tip 2: you can change the color of the active button using the data-active-color="primary | info | success | warning | danger"
+	-->
+
+    	<div class="sidebar-wrapper">
+    	    <!--<%= Date.today.strftime('%a, %b %d %Y') %>-->
+            <div class="logo">
+                <a href="#" class="simple-text">
+                    <%= link_to image_tag('mints-logo.png'), root_path %>
+                </a>
+            </div>
+
+            <ul class="nav">
+
+                <!--community page-->
+                <li class="active">
+                  <a href="dashboard.html">
+                        <i class="ti-panel"></i>
+                    <p><%= link_to 'Local Events', events_path %></p>
+                  </a>
+                </li>
+                
+                <!--inbox page-->
+                <li class="active">
+                  <a href="#">
+                        <i class="ti-panel"></i>
+                    <p><%= link_to 'Explore Careers', stories_path %></p>
+                  </a>
+                </li>
+                <!--user profile page-->
+                <li class="active">
+                  <a href="#">
+                        <i class="ti-panel"></i>
+                    <p><%= link_to 'Free Directory', startups_path %></p>
+                  </a>
+                </li>
+
+				<li class="active-pro">
+                    <a href="#">
+                        <i class="ti-export"></i>
+                        
+                        <p>Become a Sponsor</p>
+                    </a>
+                </li>
+                
+            </ul>
+            
+    	</div>
+    </div>

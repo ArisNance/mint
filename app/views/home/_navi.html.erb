@@ -1,69 +1,44 @@
-<div id="wrapper-navbar">
-		<div class="navbar object">
-    		<div id="wrapper-sorting">
-            <div id="wrapper-title-1">
-            <!--<div class="top-rated object">BLacK History</div>-->
-            <%= link_to image_tag("mints-logo.png"), root_path, id: "logo" %>
-            	<div id="fleche-nav-1"></div>
-    		</div>
-            
-      <!--      <div id="wrapper-title-2">-->
-            <!--<a href="#"><div class="recent object">Leaders Today</div></a>-->
-      <!--      <%= link_to 'mints', people_path, class: "top-rated object", title: "See who's open to networking." %>-->
-      <!--          <div id="fleche-nav-2"></div>-->
-    		<!--</div>-->
-            
-            <div id="wrapper-title-3">
-            <!--<a href="#"><div class="oldies object">StartUps</div></a>-->
-            <%= link_to 'Directory', startups_path, class: "oldies object", title: "Community directory. Post now." %>
-                <div id="fleche-nav-3"></div>
-    		</div>
-    		
-    		 <div id="wrapper-title-3">
-            <!--<a href="#"><div class="oldies object">Stories</div></a>-->
-            <%= link_to 'jobs', stories_path, class: "oldies object", title: "Post or Find jobs  " %>
-                <div id="fleche-nav-3"></div>
-    		</div>
-    		
-    		<div id="wrapper-title-3">
-            <a href="#" style="pointer-events: none;"><div class="oldies object">Give</div></a>
-            <%= link_to '', class: "oldies object", title: "Read, Write, & Share Poety." %>
-            <div id="fleche-nav-3"></div>
-    		</div>
-    		<div id="wrapper-title-3">
-            <!--<a href="#"><div class="oldies object">Stories</div></a>-->
-            <%= link_to 'Events', events_path, class: "oldies object events", title: "Find evenets nearby. Post now for free!" , style: "pointer-events: ; color: #424242;" %>
-            <div id="fleche-nav-3"></div>
-    		</div>
-    		
+<nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"></a>
             </div>
-            <div id="wrapper-bouton-icon">
+            <div class="collapse navbar-collapse">
+
+                <form class="navbar-form navbar-left navbar-search-form" role="search">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                        <input type="text" value="" class="form-control" placeholder="Search...">
+                    </div>
+                </form>
+
+                <div class="dropdown">
+              <a href="#" class="btn dropdown-toggle" data-toggle="dropdown">
+                  Menu
+                  <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#paper">About Mints</a></li>
+                <!--<li><a href="#paper">Another action</a></li>-->
+                <!--<li><a href="#paper">Something else here</a></li>-->
+                <li class="divider"></li>
                 <% if user_signed_in? %>
-            	<div id="bouton-ai"><%= link_to "Logout", destroy_user_session_path, method: :delete, style: 'font-size: 11px;' %></div>
-            	<%= link_to edit_user_registration_path, id: "bouton-psd" do %><i style="font-size: 15px;" class="fa fa-pencil" title="Edit Account"></i><% end %>
-            	<% else %>
-            	<div id="bouton-theme"><%= link_to "Login", new_user_session_path %></div>
-            	<div id="bouton-font"><%= link_to "Join", new_user_registration_path %></div>
-            	<!--<div id="bouton-photo"><img src="assets/icon-photo.svg" alt="photo" title="Photo" height="28" width="28"></div>-->
-            	<!--<div id="bouton-premium"><img src="assets/icon-premium.svg" alt="premium" title="Premium" height="28" width="28"></div>-->
-            	<% end %>
-			</div>
-    	</div>
-    </div>
-<!-- HEADER -->
-
-<div id="wrapper-header">
-	<div id="main-header" class="object">
-		<!--<div class="logo">-->
-		<!--<%= link_to image_tag("mints-logo.png"), root_path %>-->
-		<!--</div>-->
-		
-        <div id="main_tip_search"> 
-			<form>
-				<input type="text" name="search" id="tip_search_input" list="search" autocomplete=off required>
-			</form>
-		</div>
-        <div id="stripes"></div>
-    </div>
-</div>
-
+                <li><a href="#paper">Logout</a></li>
+                <li><%= link_to 'Add Event', new_event_path %></li>
+                <li><%= link_to 'Post Job', new_event_path %></li>
+                <li><%= link_to 'Directory Submission', new_event_path %></li>
+                <li class="divider"></li>
+                <% else %>
+                <li><a href="#paper">Login</a></li>
+                <% end %>
+              </ul>
+        </div>
+            </div>
+        </div>
+    </nav>

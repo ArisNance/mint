@@ -8,7 +8,7 @@ class StoriesController < ApplicationController
   def index
     @stories = Story.all
     # @stories = Story.paginate(:page => params[:page], :per_page => 4)
-    @stories = Story.order('created_at DESC').paginate(:page => params[:page], :per_page => 4)
+    @stories = Story.order('created_at DESC').paginate(:page => params[:page], :per_page => 12)
   end
 
   # GET /stories/1

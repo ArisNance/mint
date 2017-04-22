@@ -12,22 +12,30 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,900,900italic,700italic,700,500italic,400italic,500,300italic,300' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 
+ <!-- Bootstrap core CSS     -->
+    <%= stylesheet_link_tag 'bootstrap.min.css', media: 'all' %>
+    <!-- Animation library for notifications   -->
+    <%= stylesheet_link_tag 'animate.min.css', media: 'all' %>
+    <!--  Paper Dashboard core CSS    -->
+    <%= stylesheet_link_tag 'paper_dashboard.css', media: 'all' %>
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <%= stylesheet_link_tag 'demo.css', media: 'all' %>
+
+    <!--  Fonts and icons     -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+    <%= stylesheet_link_tag 'themify_icons.css', media: 'all' %>
+    
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-	<%= javascript_include_tag 'main', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'jquery.localScroll.min', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'jquery.scrollTo.min', 'data-turbolinks-track' => true %>
+
   <%= csrf_meta_tags %>
   <!--font awesome-->
 	<script src="https://use.fontawesome.com/9eab927523.js"></script>
 	<!--sheets and scripts-->
-  <%= stylesheet_link_tag 'style', media: 'all', 'data-turbolinks-track' => true %>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   
   <!--Tooltipster-->
-  <link rel="stylesheet" type="text/css" href="tooltipster/dist/css/tooltipster.bundle.min.css" />
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.0.min.js"></script>
-    <script type="text/javascript" src="tooltipster/dist/js/tooltipster.bundle.min.js"></script>
     <!-- google analytics -->
     <%= analytics_init if GoogleAnalytics.valid_tracker? %>
     
@@ -42,18 +50,18 @@
 </head>
 
 
-
 <body>
     <% flash.each do |name, msg| %>
   <%= content_tag(:div, msg, class: "alert alert-info") %>
   <% end %>
+
+<%= render 'home/navi'%>
   
-  <%= render 'home/navi' %>
-  <%= render 'home/header' %>
+
   
   <%= yield %>
   
-  <%= render 'home/footer' %>
+
   
   <!--alert fadeout-->
 <script>
@@ -62,6 +70,30 @@
 <script>
   $("#notice" ).fadeOut(3000);
 </script>
+
+
+<!--   Core JS Files   -->
+<%= javascript_include_tag 'jquery_1.10.2.js' %>
+
+<!-- datetime picker -->
+
+<!-- datetime picker end -->
+
+<%= javascript_include_tag 'bootstrap.min.js' %>
+
+<!--  Checkbox, Radio & Switch Plugins -->
+<%= javascript_include_tag 'bootstrap_checkbox_radio.js' %>
+<!--  Charts Plugin -->
+<%= javascript_include_tag 'chartist.min.js' %>
+<!--  Notifications Plugin    -->
+<%= javascript_include_tag 'bootstrap_notify.js' %>
+<!--  Google Maps Plugin    -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+<!-- Paper Dashboard Core javascript and methods for Demo purpose -->
+<%= javascript_include_tag 'paper_dashboard.js' %>
+<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
+<%= javascript_include_tag 'demo.js' %>
  </body>
   
 </html>
