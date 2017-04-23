@@ -29,13 +29,13 @@
                 <!--<li><a href="#paper">Something else here</a></li>-->
                 <li class="divider"></li>
                 <% if user_signed_in? %>
-                <li><a href="#paper">Logout</a></li>
+                <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
                 <li><%= link_to 'Add Event', new_event_path %></li>
                 <li><%= link_to 'Post Job', new_event_path %></li>
                 <li><%= link_to 'Directory Submission', new_event_path %></li>
                 <li class="divider"></li>
                 <% else %>
-                <li><a href="#paper">Login</a></li>
+                <li><%= link_to "Login", new_user_session_path %></li>
                 <% end %>
               </ul>
         </div>
