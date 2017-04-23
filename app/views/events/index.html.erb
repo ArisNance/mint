@@ -61,7 +61,7 @@
                       <div class="footer">
                           <hr />
                           <div class="stats">
-                              </i><span> <%= truncate(event.name, length: 15) { link_to "more", event } %></span>  <span>|</span>  <strong><%= event.city %></strong></span>
+                              </i><span> <%= truncate(event.name, length: 20) { link_to "more", event } %></span>  <span>|</span>  <strong><%= event.city %></strong></span>
                           </div>
                       </div>
                   </div>
@@ -82,25 +82,5 @@
 
 
 </body>
-
-<!--   Core JS Files   -->
-<%= javascript_include_tag 'jquery_1.10.2.js' %>
-
-<%= javascript_include_tag 'bootstrap.min.js' %>
-
-<!--  Checkbox, Radio & Switch Plugins -->
-<%= javascript_include_tag 'bootstrap_checkbox_radio.js' %>
-<!--  Charts Plugin -->
-<%= javascript_include_tag 'chartist.min.js' %>
-<!--  Notifications Plugin    -->
-<%= javascript_include_tag 'bootstrap_notify.js' %>
-<!--  Google Maps Plugin    -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-
-<!-- Paper Dashboard Core javascript and methods for Demo purpose -->
-<%= javascript_include_tag 'paper_dashboard.js' %>
-<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
-<%= javascript_include_tag 'demo.js' %>
-
 
 </html>

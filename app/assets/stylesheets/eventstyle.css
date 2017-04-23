@@ -749,7 +749,7 @@ button:focus,
  * Preloader
 /* ---------------------------------------------- */
 #preloader {
-    background : #ffffff;
+    background : transparent;
     bottom     : 0;
     left       : 0;
     position   : fixed;

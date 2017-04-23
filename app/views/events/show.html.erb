@@ -38,6 +38,10 @@
     top: 40% !important;
 }
 
+.navbar {
+    display: none;
+}
+
 #post-content {
     line-height: 37px;
     font-size: 20px;
@@ -213,9 +217,9 @@
 
 
 <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-<script src="https://maps.googleapis.com/maps/api/js"></script>
+
 
 <!--<script src="js/one-page-nav.js"></script>-->
-<%= javascript_include_tag 'scripts', 'data-turbolinks-track' => true %>
+<%= javascript_include_tag 'scripts', 'data-turbolinks-track' => false %>
 </body>
 </html>
