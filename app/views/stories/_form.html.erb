@@ -23,24 +23,24 @@
 
   <div class="form-group">
     <%= f.label :Company_Name %><br>
-    <%= f.text_field :facebook_url, required: true, placeholder: 'Organization or Company Name', class: "form-control" %>
+    <%= f.text_field :facebook_url, required: true, placeholder: 'Organization or Company Name', class: "form-control border-input" %>
     <br>
     <br>
     <!--mints Gallery-->
     
    <!--end-->
     <%= f.label :Company_Logo %><br>
-    <%= f.text_field :header_image, placeholder: ' Transparent Recommended | http://www.lavail.io/url_to_logo.png', class: "form-control" %>
+    <%= f.text_field :header_image, placeholder: ' Transparent Recommended | http://www.lavail.io/url_to_logo.png', class: "form-control border-input" %>
     <br>
     
     <%= f.label :Company_Summary %><br>
-    <%= f.text_field :description, placeholder: 'What is it you guys do?', class: "form-control" %><br>
+    <%= f.text_field :description, placeholder: 'What is it you guys do?', class: "form-control border-input" %><br>
     
     <%= f.label :Job_title %><br>
-    <%= f.text_field :title, placeholder: 'Community Director', class: "form-control" %><br>
+    <%= f.text_field :title, placeholder: 'Community Director', class: "form-control border-input" %><br>
     
     <%= f.label :Job_Description %><br>
-    <%= f.text_area :content, placeholder: '|... ', class: "form-control" %><br>
+    <%= f.text_area :content, placeholder: '|... ', class: "form-control border-input" %><br>
 
     <%= f.label :End_Date %><br>
     <%= f.datetime_select :end_time, class: "form-control" %>
@@ -48,7 +48,7 @@
     <br>
 
     <%= f.label :Application_Link %><br>
-    <%= f.text_field :twitter_url, required: false, placeholder: 'http://www.lavail.io/profile-name | Leave blank to remain anonymous', class: "form-control" %><br>
+    <%= f.text_field :twitter_url, required: false, placeholder: 'http://www.lavail.io/profile-name | Leave blank to remain anonymous', class: "form-control border-input" %><br>
   
   </div>
   <div class="actions">

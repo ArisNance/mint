@@ -52,7 +52,7 @@
                   </div>
                   <div class="col-xs-7">
                       <div class="numbers">
-                          <p><%= link_to story.title, story  %></p>
+                          <p><%= link_to truncate(story.title, length: 20) { link_to "more", story }  %></p>
                           <br>
                           <%= truncate(story.facebook_url, length: 15) { link_to "more", story } %>
                       </div>
