@@ -7,7 +7,7 @@ class StartupsController < ApplicationController
   # GET /startups.json
   def index
     @startups = Startup.all
-    @startups = Startup.order('created_at DESC').paginate(:page => params[:page], :per_page => 7)
+    @startups = Startup.order('created_at DESC').paginate(:page => params[:page], :per_page => 6)
   end
 
   # GET /startups/1
