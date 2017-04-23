@@ -11,6 +11,37 @@
 <div class="content">
   <div class="container-fluid">
       <div class="row">
+                <!--permanent card-->
+    <div class="col-lg-3 col-sm-6">
+<div class="card">
+    <div class="content">
+        <div class="row">
+          
+            <div class="col-xs-5">
+                <div class="icon-big icon-warning text-center">
+                <%= image_tag('mints-logo.png') %>
+                </div>
+            </div>
+            <div class="col-xs-7">
+                <div class="numbers">
+                    <p>Post your story</p>
+                    <br>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <hr />
+            <div class="stats">
+                <%= link_to new_story_path do %><i style="font-size: 30px; .part-info-image {
+}" class="fa fa-plus-circle" title="Post an story"></i><% end %>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+        <!--end-->
+   
         <% @startups.each do |startup| %>
           <div class="col-lg-3 col-sm-6">
               <div class="card">
@@ -40,11 +71,12 @@
                   </div>
               </div>
           </div>
+          
           <!--job listings-->
         <% end %>
       </div>
 
-
+<%= will_paginate @startup %>
         </div>
     </div>
 

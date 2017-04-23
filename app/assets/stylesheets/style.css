@@ -232,10 +232,11 @@ body,html{
 .navbar{
 	position: relative;
     width: 81%;
-    left: 19.5%;
+    left: 20.2%;
     height: 70px;
     top: 0;
     border: none;
+    z-index: 11;
 }
 
 .top-rated,.recent,.oldies{
