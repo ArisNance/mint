@@ -82,7 +82,23 @@
 </div>
 </div>
 
+<!--Notify-->
+<script type="text/javascript">
+	$(document).ready(function(){
 
+    	demo.initChartist();
+
+    	$.notify({
+        	icon: 'ti-gft',
+        	message: "Welcome to Mints. Remember this is your Community!"
+
+        },{
+            type: 'success',
+            timer: 200
+        });
+
+	});
+</script>
 </body>
 
 <!--   Core JS Files   -->

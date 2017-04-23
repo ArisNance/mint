@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   resources :people
   resources :pins, :path => 'history'
   devise_for :users
-  root 'home#landing'
+  root 'stories#index'
   # get 'home/index'
   devise_scope :user do get 'users/sign_out' => "devise/sessions#destroy"
   end

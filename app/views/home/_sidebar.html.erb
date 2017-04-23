@@ -37,6 +37,17 @@
                     <p><%= link_to 'Free Directory', startups_path %></p>
                   </a>
                 </li>
+                           
+                <li class="active">
+                  <a href="#">
+                        <i class="ti-panel"></i>
+                    <% if user_signed_in? %>
+                    <p><%= link_to "Logout", destroy_user_session_path, method: :delete %></p>
+                    <% else %>
+                    <p><%= link_to "Login", new_user_session_path %></p>
+                    <% end %>
+                  </a>
+                </li>
 
 				<li class="active-pro">
                     <a href="#">
@@ -45,6 +56,7 @@
                         <p>Become a Sponsor</p>
                     </a>
                 </li>
+
                 
             </ul>
             
