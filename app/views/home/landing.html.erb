@@ -10,6 +10,7 @@
     eight: 70px;
     top: 0;
     border: none;
+    display: none;
 }
 
 #wrapper-copyright {
@@ -127,5 +128,29 @@ p span {
     <% end %>
 </p>
 
-<!--Call to action-->
+<!--Notify-->
+<script type="text/javascript">
+	$(document).ready(function(){
 
+    	demo.initChartist();
+
+    	$.notify({
+        	icon: 'ti-gft',
+        	message: "Welcome to Mints. Remember this is your Community!"
+
+        },{
+            type: 'success',
+            timer: 200
+        });
+
+	});
+</script>
+
+<!-- Paper Dashboard Core javascript and methods for Demo purpose -->
+<%= javascript_include_tag 'paper_dashboard.js' %>
+<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
+<%= javascript_include_tag 'demo.js' %>
+<!--  Notifications Plugin    -->
+<%= javascript_include_tag 'bootstrap_notify.js' %>
+<!--   Core JS Files   -->
+<%= javascript_include_tag 'jquery_1.10.2.js' %>

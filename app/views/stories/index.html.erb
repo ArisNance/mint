@@ -40,7 +40,7 @@
 </div>
 <!--end-->
 <% @stories.each do |story| %>
-  <div class="col-lg-3 col-sm-6" style="width: 23% !important;">
+  <div class="col-lg-3 col-sm-6">
       <div class="card">
           <div class="content">
               <div class="row">
@@ -103,21 +103,6 @@
 <%= javascript_include_tag 'paper_dashboard.js' %>
 <!-- Paper Dashboard DEMO methods, don't include it in your project! -->
 <%= javascript_include_tag 'demo.js' %>
-<script type="text/javascript">
-	$(document).ready(function(){
 
-    	demo.initChartist();
-
-    	$.notify({
-        	icon: 'ti-gft',
-        	message: "Find a job or Post one."
-
-        },{
-            type: 'success',
-            timer: 100
-        });
-
-	});
-</script>
 
 </html>
