@@ -85,3 +85,7 @@
     float:right;
     margin-right: 10%;
 }
+
+.container-fluid {
+    width: 88%;
+}
