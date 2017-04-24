@@ -11,7 +11,12 @@
 // about supported directives. // about supported directives.
 //removed bootstrap-sprockets
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
-//= require turbolinks
 //= require bootstrap
+//= require turbolinks
 //= require_tree .
+
+$(document).on('click', 'navbar-toggle', function(){
+  // your custom code
+})
