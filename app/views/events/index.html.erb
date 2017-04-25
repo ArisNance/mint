@@ -52,7 +52,7 @@
                           </div>
                           <div class="col-xs-7">
                               <div class="numbers">
-                                  <p><%= truncate(event.location, length: 15) { link_to "more", event }  %></p>
+                                  <p><%= link_to word_wrap(event.name, line_width: 1), event %></p>
                                   <br>
                                   <%= event.start_time.strftime("%b %d") %>
                               </div>
@@ -61,7 +61,7 @@
                       <div class="footer">
                           <hr />
                           <div class="stats">
-                              </i><span> <%= truncate(event.name, length: 20) { link_to "more", event } %></span>  <span>|</span>  <strong><%= event.city %></strong></span>
+
                           </div>
                       </div>
                   </div>
