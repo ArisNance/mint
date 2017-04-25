@@ -52,7 +52,7 @@
                           </div>
                           <div class="col-xs-7">
                               <div class="numbers">
-                                  <p><%= link_to word_wrap(event.name, line_width: 1), event %></p>
+                                  <p><%= link_to truncate(event.name, length: 25), event %></p>
                                   <br>
                                   <%= event.start_time.strftime("%b %d") %>
                               </div>
