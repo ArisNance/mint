@@ -82,7 +82,7 @@ a:hover{
 
 
 .fa {
-	font-size: 30px;
+	font-size: 15px;
  
   
 }
@@ -819,7 +819,7 @@ a.oldies.object{
 	float:left;
 	width:100%;
 	height:auto;
-	background-color:#f4f4f4;
+	background-color:#ffffff;
 	border-top:solid #F1F1F1 1px;
 }
 
@@ -943,11 +943,13 @@ a.oldies.object{
 
 .copyright{
 	position:relative;
-	width:1200px;
-	left:50%;
 	margin-left:-600px;
 	height:100%;
 	top:0;
+}
+
+.pull-left{
+	margin-left: 10%;
 }
 
 .copy-text{
@@ -1349,7 +1351,7 @@ textarea.form-control {
 
 @media only screen and (max-width: 480px){
 #main-header, .navbar, .container, .container-footer, .thank, .oldnew, .copyright {
-    width: 100%;
+    width: auto;
 	}
 }
 
@@ -1373,6 +1375,26 @@ textarea.form-control {
     margin-left: -100%;
 	}
 }
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+.copyright.pull-right{
+    left:-9%;
+	}
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+.fa-heart{
+    font-size: 12px;
+	}
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+.pull-left {
+    margin-left: 0%;
+	}
+}
+
+
 
 @media (min-width: 1200px){
 #mobile-dropdown {

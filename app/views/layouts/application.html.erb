@@ -4,20 +4,26 @@
  
   <title>Mints | Beta</title>
   
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <!-- Behavioral Meta Data -->
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <link rel="icon" type="image/png" href="assets/mints-logo.png">
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,900,900italic,700italic,700,500italic,400italic,500,300italic,300' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Behavioral Meta Data -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="icon" type="image/png" href="assets/mints-logo.png">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,900,900italic,700italic,700,500italic,400italic,500,300italic,300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 	
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
     <!--   Core JS Files   -->
+    
+<!-- Paper Dashboard Core javascript and methods for Demo purpose -->
+<%= javascript_include_tag 'paper_dashboard.js' %>
+<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
+<%= javascript_include_tag 'demo.js' %>
+    <!-- Bootstrap core CSS     -->
 <%= javascript_include_tag 'jquery_1.10.2.js' %>
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+<%= javascript_include_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", "data-turbolinks-eval" => false %>
 <!--  Checkbox, Radio & Switch Plugins -->
 <%= javascript_include_tag 'bootstrap_checkbox_radio.js' %>
 <!--  Charts Plugin -->
@@ -26,11 +32,6 @@
 <!--  Google Maps Plugin    -->
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 
-<!-- Paper Dashboard Core javascript and methods for Demo purpose -->
-<%= javascript_include_tag 'paper_dashboard.js' %>
-<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
-<%= javascript_include_tag 'demo.js' %>
-    <!-- Bootstrap core CSS     -->
     <%= stylesheet_link_tag 'bootstrap.min.css', media: 'all' %>
     <!-- Animation library for notifications   -->
     <%= stylesheet_link_tag 'animate.min.css', media: 'all' %>
@@ -92,7 +93,7 @@
 <script>
    $('.navbar-toggle').collapse()
 </script>
-
+<%= render 'home/footer'%>
  </body>
   
 </html>
