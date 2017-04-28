@@ -10,13 +10,9 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives. // about supported directives.
 //removed bootstrap-sprockets
-//= require jquery
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require bootstrap
+//= require jquery
 //= require turbolinks
 //= require_tree .
-
-$(document).on('click', 'navbar-toggle', function(){
-  // your custom code
-})
