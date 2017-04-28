@@ -9,10 +9,8 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives. // about supported directives.
-//removed bootstrap-sprockets
-//= require jquery.turbolinks
+//= require jquery
 //= require jquery_ujs
 //= require bootstrap
-//= require jquery
 //= require turbolinks
 //= require_tree .

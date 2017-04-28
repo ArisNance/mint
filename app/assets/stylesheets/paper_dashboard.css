@@ -927,9 +927,11 @@ hr {
   margin-left: 0; }
 
 textarea.form-control {
-  max-width: 10%;
+  max-width: 541px;
   padding: 10px 18px;
-  resize: none; }
+  resize: none;
+  width: 541px;
+}
 
 .alert {
   border: 0;
