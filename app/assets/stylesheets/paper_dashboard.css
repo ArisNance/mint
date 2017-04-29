@@ -1578,7 +1578,10 @@ textarea.form-control {
     min-height: 64px; }
   .card .numbers {
     font-size: inherit;
-    text-align: right; }
+    text-align: right;
+    word-break: break-word;
+    
+  }
     .card .numbers p {
       margin: 0; }
   .card ul.team-members li {
