@@ -14,6 +14,36 @@
  
  */
 /*      light colors - used for select dropdown         */
+.search {
+  width: 50%;
+  text-align: center;
+  border-radius: 0px !important;
+}
+
+#search-form{
+  margin-left: 28%;
+}
+
+@media only screen and (max-device-width: 667px) and (min-device-width: 375px){
+form {
+    margin-left: 12% !important;
+    width: 45%;
+}
+}
+
+@media only screen and (max-device-width: 667px) and (min-device-width: 375px){
+#search-btn {
+  margin-left: 60% !important;
+  margin-top: 10px;
+  width: 50% !important;
+}
+}
+
+#search-btn {
+  margin-left: 22%;
+  margin-top: 10px;
+}
+
 .ct-blue {
   stroke: #7A9E9F !important; }
 
@@ -1580,7 +1610,6 @@ textarea.form-control {
     font-size: inherit;
     text-align: right;
     word-break: break-word;
-    
   }
     .card .numbers p {
       margin: 0; }

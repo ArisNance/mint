@@ -1,0 +1,5 @@
+
+<%= form_tag(stories_path, :method => "get", id: "search-form") do %>
+<%= text_field_tag :search, params[:search], placeholder: "Search Jobs", class: "form-control border-input search" %>
+<%= submit_tag "Search", id: "search-btn", class: "btn btn-primary btn-xs" %>
+<% end %>

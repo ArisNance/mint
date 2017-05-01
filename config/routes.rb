@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   resources :galleries
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :stories, :path => 'jobs'
+  
+  
   # resources :startups
   resources :people
   resources :pins, :path => 'history'
@@ -77,4 +79,7 @@ resources :startups, :path => 'directory'
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  resources :stories
+  get "search", to: "search#search"
+
 end

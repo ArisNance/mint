@@ -5,11 +5,20 @@ class StoriesController < ApplicationController
 
   # GET /stories
   # GET /stories.json
-  def index
-    @stories = Story.all
-    # @stories = Story.paginate(:page => params[:page], :per_page => 4)
+  # def index
+  #   @stories = Story.all
+  #   # @stories = Story.paginate(:page => params[:page], :per_page => 4)
+  #   @stories = Story.order('created_at DESC').paginate(:page => params[:page], :per_page => 6)
+  # end
+  
+def index
+  @stories = Story.all
+  if params[:search]
+    @stories = Story.search(params[:search]).order("created_at DESC").paginate(:page => params[:page], :per_page => 6)
+  else
     @stories = Story.order('created_at DESC').paginate(:page => params[:page], :per_page => 6)
   end
+end
 
   # GET /stories/1
   # GET /stories/1.json
@@ -26,8 +35,8 @@ class StoriesController < ApplicationController
   def edit
   end
 
-  # POST /stories
-  # POST /stories.json
+  # Story /stories
+  # Story /stories.json
   def create
     @story = current_user.stories.build(story_params)
 
