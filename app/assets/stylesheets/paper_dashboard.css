@@ -40,7 +40,7 @@ form {
 }
 
 #search-btn {
-  margin-left: 22%;
+  margin-left: 21%;
   margin-top: 10px;
 }
 
@@ -871,7 +871,11 @@ hr {
     top: 50%;
     vertical-align: middle; }
   .form-control.border-input {
-    border: 1px solid #CCC5B9; }
+    border: 1px solid #CCC5B9;
+    height: 30px;
+    border-radius: 6px !important;
+    
+  }
   .open .form-control {
     border-bottom-color: transparent; }
 

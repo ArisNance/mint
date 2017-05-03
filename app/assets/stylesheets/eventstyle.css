@@ -698,7 +698,7 @@ button:focus,
     line-height   : 46px;
     color         : #969595;
     border        : 1px solid #009688;
-    border-radius : 0;
+    border-radius : 6px !important;
     box-shadow    : none;
     }
 
