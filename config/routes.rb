@@ -22,7 +22,7 @@ resources :startups, :path => 'directory'
   
   get 'home/photos'
   get 'home/index'
-  get 'home/about'
+  get 'home/about', :path => 'about'
   get 'home/sponsor'
   
   # get 'home/index'
