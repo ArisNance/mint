@@ -24,6 +24,15 @@
   margin-left: 28%;
 }
 
+#p-content{
+font-size: 15px;
+line-height: 30px;
+letter-spacing: 1px;
+background: #f4f3ef;
+text-align: inherit;
+margin-top: 10%;
+}
+
 @media only screen and (max-device-width: 667px) and (min-device-width: 375px){
 form {
     margin-left: 12% !important;
@@ -173,7 +182,8 @@ body {
   font-family: 'Muli', Arial, sans-serif; }
   body .wrapper {
     min-height: 100vh;
-    position: relative; }
+    position: relative;
+    height: auto;}
 
 a {
   color: #68B3C8; }
@@ -873,7 +883,7 @@ hr {
   .form-control.border-input {
     border: 1px solid #CCC5B9;
     height: 30px;
-    border-radius: 6px !important;
+    border-radius: 15px !important;
     
   }
   .open .form-control {

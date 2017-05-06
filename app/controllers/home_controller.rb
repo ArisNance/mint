@@ -10,6 +10,9 @@ class HomeController < ApplicationController
   
   end
   
-  def landing
+  def about
+  end
+  
+  def sponsor
   end
 end

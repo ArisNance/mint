@@ -89,3 +89,10 @@
 .container-fluid {
     width: 88%;
 }
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+.featurette-heading {
+margin-top: 20%;
+padding-bottom: 12%;
+	}
+}
