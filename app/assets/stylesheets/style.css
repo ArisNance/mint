@@ -953,7 +953,7 @@ a.oldies.object{
 }
 
 .pull-left{
-	margin-left: 10%;
+	margin-left: 15%;
 }
 
 .copy-text{
@@ -1382,7 +1382,6 @@ textarea.form-control {
 
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
 .copyright.pull-right{
-    left:-9%;
 	}
 }
 
